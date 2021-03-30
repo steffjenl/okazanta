@@ -79,10 +79,10 @@ class SubscribeController extends Controller
     {
         $email = Binput::get('email');
         $subscriptions = Binput::get('subscriptions');
-        $verified = app(Repository::class)->get('setting.skip_subscriber_verification');
+        $skip_verification = app(Repository::class)->get('setting.skip_subscriber_verification');
 
         try {
-            $subscription = execute(new SubscribeSubscriberCommand($email, $verified));
+            $subscription = execute(new SubscribeSubscriberCommand($email, $skip_verification));
         } catch (ValidationException $e) {
             return cachet_redirect('status-page')
                 ->withInput(Binput::all())
@@ -90,7 +90,7 @@ class SubscribeController extends Controller
                 ->withErrors($e->getMessageBag());
         }
 
-        if ($verified) {
+        if ($skip_verification || $subscription->getIsVerifiedAttribute() === true) {
             // Send the subscriber a link to manage their subscription.
             $subscription->notify(new ManageSubscriptionNotification());
         }
