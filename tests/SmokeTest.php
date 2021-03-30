@@ -20,6 +20,7 @@ use CachetHQ\Cachet\Notifications\Subscriber\VerifySubscriptionNotification;
 use CachetHQ\Cachet\Notifications\Subscriber\ManageSubscriptionNotification;
 use CachetHQ\Cachet\Models\Subscriber;
 use Illuminate\Support\Facades\URL;
+use Carbon\Carbon;
 
 /**
  * This is the smoke test class.
@@ -82,6 +83,36 @@ class SmokeTest extends AbstractTestCase
         # Subscriber should now be verified
         $subscriber->refresh();
         $this->assertEquals(true, $subscriber->getIsVerifiedAttribute());
+    }
+
+    /**
+     * Ensure existing subscriber can receive manage subscriptions email
+     */
+    public function test_existing_subscriber_managing_own_subscription()
+    {
+        $this->configureApp();
+
+        $subscriber = factory(Subscriber::class)->create([
+            'email'  => 'test@example.com',
+            'verified_at' => Carbon::now(),
+        ]);
+
+        Notification::fake();
+
+        $this->get('/subscribe')->assertStatus(200);
+
+        Notification::assertNothingSent();
+
+        $this->post('/subscribe', ['email' => 'test@example.com'])->assertStatus(302);
+
+        Notification::assertNotSentTo(
+            [$subscriber],
+            VerifySubscriptionNotification::class
+        );
+        Notification::assertSentTo(
+            [$subscriber],
+            ManageSubscriptionNotification::class
+        );
     }
 
     public function test_dashboard_auth_page()
