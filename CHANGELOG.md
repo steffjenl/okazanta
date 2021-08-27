@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.5.1]
+
+### Fixed
+
+- [SECURITY VULNERABILITY] Configuration leak, user/admin users could leak the value of any config entry
+  from `.env` file by using variable placeholders. Setting values are now
+  sanitised (GHSA-88f9-7xxh-c688). Thanks to @thomas-chauchefoin-sonarsource
+- [SECURITY VULNERABILITY] New line injection during configuration editing
+  possible by a user/admin. Setting values are now sanitised
+  (GHSA-9jxw-cfrh-jxq6). Thanks to @thomas-chauchefoin-sonarsource
+- [SECURITY VULNERABILITY] Forced reinstall, user/admin users could trick Cachet
+  to allow them to access the `/setup` endpoint and reinstall the whole
+  instance. Fixed by preventing clearing the instance name. (GHSA-r67m-m8c7-jp83).
+  Thanks to @thomas-chauchefoin-sonarsource
+- Resend edit subscription email to existing subscribers on request #52
+
 ## [2.5.0]
 
 This is not an exhaustive list of the all the changes made since 2.3 but
