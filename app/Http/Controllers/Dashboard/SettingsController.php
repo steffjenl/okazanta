@@ -396,6 +396,12 @@ class SettingsController extends Controller
                     $settingValue = rtrim($settingValue, '/');
                 }
 
+                if ($settingName === 'app_name') {
+                    if (empty($settingValue)) {
+                        continue;
+                    }
+                }
+
                 $setting->set($settingName, $settingValue);
             }
         } catch (Exception $e) {
