@@ -18,6 +18,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Notification;
 use CachetHQ\Cachet\Notifications\Subscriber\VerifySubscriptionNotification;
 use CachetHQ\Cachet\Notifications\Subscriber\ManageSubscriptionNotification;
+
 use CachetHQ\Cachet\Models\Subscriber;
 use Illuminate\Support\Facades\URL;
 
