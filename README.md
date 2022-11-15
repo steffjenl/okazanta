@@ -1,3 +1,5 @@
+<p align="center"><img src="https://okazanta.com/assets/okazanta-logo-01.svg" width="150px"></p>
+
 # Okazanta
 
 Okazanta is modern open source status page software that anyone can use to create a clean and accessible status page for any kind of services.
