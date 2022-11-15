@@ -1,11 +1,5 @@
-<p align="center"><img src="https://okazanta.com/assets/okazanta-logo-01.svg" width="50%"></p>
+<p align="center"><img src="https://okazanta.com/assets/okazanta-logo-01.svg" width="150px"></p>
 
-<p align="center">
-<a href="https://styleci.io/repos/26730195/"><img src="https://styleci.io/repos/26730195/shield" alt="StyleCI"></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/license-BSD3-brightgreen.svg?style=flat-square" alt="License"></a>
-<a href="https://translate.cachethq.io/project/cachet"><img src="https://d322cqt584bo4o.cloudfront.net/cachet/localized.svg" alt="Localisation"></a>
-<a href="https://github.com/CachetHQ/Cachet/releases"><img src="https://img.shields.io/github/release/cachethq/cachet.svg?style=flat-square" alt="Latest Stable Version"></a>
-</p>
 # Okazanta
 
 Okazanta is modern open source status page software that anyone can use to create a clean and accessible status page for any kind of services.
