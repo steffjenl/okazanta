@@ -44,7 +44,11 @@ The steering committee is made up of community members and developers who make a
 
 Each member of the steering committee also takes ownership of the project on GitHub. This ensures that in the event of any one person abandoning Okazanta or being unavailable for some reason the project does not stagnate or stop.
 
-At this moment the Steering Committee has not yet been formed, but members will be listed in this document once it has. 
+Currently the committee is made up of four members, identified here by their GitHub usernames:
+@awjudd
+@etec-masterofsynapse
+@evrifaessa
+@John-S4
 
 Members of the steering committee may recommend and appoint new members from the community at any time. A nomination for a new member will result in a discussion and a vote by the existing committee members. 
 
