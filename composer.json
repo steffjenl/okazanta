@@ -29,7 +29,7 @@
         "symfony/polyfill-mbstring": "*"
     },
     "require": {
-        "php": "^7.2.5",
+        "php": "^7.3.3",
         "ext-mbstring": "*",
         "ext-openssl": "*",
         "ext-xml": "*",
@@ -108,7 +108,7 @@
     },
     "config": {
         "platform": {
-            "php": "7.2.5"
+            "php": "7.3.3"
         },
         "preferred-install": "dist",
         "sort-packages": true,
