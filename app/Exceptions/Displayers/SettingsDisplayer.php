@@ -13,7 +13,7 @@ namespace CachetHQ\Cachet\Exceptions\Displayers;
 
 use CachetHQ\Cachet\Settings\ReadException;
 use Exception;
-use GrahamCampbell\Exceptions\Displayers\DisplayerInterface;
+use GrahamCampbell\Exceptions\Displayer\DisplayerInterface;
 use Illuminate\Http\Request;
 
 class SettingsDisplayer implements DisplayerInterface

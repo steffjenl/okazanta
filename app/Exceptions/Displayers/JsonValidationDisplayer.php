@@ -13,8 +13,8 @@ namespace CachetHQ\Cachet\Exceptions\Displayers;
 
 use AltThree\Validator\ValidationException;
 use Exception;
-use GrahamCampbell\Exceptions\Displayers\DisplayerInterface;
-use GrahamCampbell\Exceptions\Displayers\JsonDisplayer;
+use GrahamCampbell\Exceptions\Displayer\DisplayerInterface;
+use GrahamCampbell\Exceptions\Displayer\JsonDisplayer;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 class JsonValidationDisplayer extends JsonDisplayer implements DisplayerInterface

@@ -12,7 +12,7 @@
 namespace CachetHQ\Cachet\Exceptions\Displayers;
 
 use Exception;
-use GrahamCampbell\Exceptions\Displayers\DisplayerInterface;
+use GrahamCampbell\Exceptions\Displayer\DisplayerInterface;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
 

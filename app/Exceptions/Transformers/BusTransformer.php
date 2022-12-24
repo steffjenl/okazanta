@@ -13,7 +13,7 @@ namespace CachetHQ\Cachet\Exceptions\Transformers;
 
 use CachetHQ\Cachet\Bus\Exceptions\ExceptionInterface;
 use Exception;
-use GrahamCampbell\Exceptions\Transformers\TransformerInterface;
+use GrahamCampbell\Exceptions\Transformer\TransformerInterface;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
 /**

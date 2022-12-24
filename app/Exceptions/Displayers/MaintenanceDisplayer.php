@@ -12,7 +12,7 @@
 namespace CachetHQ\Cachet\Exceptions\Displayers;
 
 use Exception;
-use GrahamCampbell\Exceptions\Displayers\DisplayerInterface;
+use GrahamCampbell\Exceptions\Displayer\DisplayerInterface;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Foundation\Http\Exceptions\MaintenanceModeException;
 use Illuminate\Http\Response;
