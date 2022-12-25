@@ -49,7 +49,7 @@
     "graham-campbell/markdown": "^13.1",
     "guzzlehttp/guzzle": "^6.3.3",
     "jenssegers/date": "^v4.0.0",
-    "laravel/framework": "^7.0",
+    "laravel/framework": "^8.0",
     "laravel/helpers": "^1.5",
     "laravel/tinker": "^2.0",
     "mccool/laravel-auto-presenter": "^7.1",
@@ -62,11 +62,11 @@
     "ext-sqlite3": "*",
     "alt-three/testbench": "5.0.x-dev",
     "barryvdh/laravel-debugbar": "^3.2",
-    "filp/whoops": "^2.4",
+    "spatie/laravel-ignition": "^1.6",
     "fzaninotto/faker": "^1.8",
     "graham-campbell/analyzer": "^3.1",
     "mockery/mockery": "^1.2",
-    "phpunit/phpunit": "^8.5"
+    "phpunit/phpunit": "^9.0"
   },
   "suggest": {
     "ext-apc": "APC Support cache driver."
