@@ -1,128 +1,142 @@
 {
-    "name": "cachethq/cachet",
-    "description": "An open source status page system, for everyone.",
-    "keywords": [
-        "laravel",
-        "cachet",
-        "alt-three",
-        "status",
-        "page"
+  "name": "cachethq/cachet",
+  "description": "An open source status page system, for everyone.",
+  "keywords": [
+    "laravel",
+    "cachet",
+    "alt-three",
+    "status",
+    "page"
+  ],
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "James Brooks",
+      "email": "james@alt-three.com"
+    },
+    {
+      "name": "Graham Campbell",
+      "email": "graham@alt-three.com"
+    },
+    {
+      "name": "Joseph Cohen",
+      "email": "joe@alt-three.com"
+    }
+  ],
+  "replace": {
+    "paragonie/random_compat": "*",
+    "symfony/polyfill-mbstring": "*"
+  },
+  "require": {
+    "php": "^8.0",
+    "ext-mbstring": "*",
+    "ext-openssl": "*",
+    "ext-xml": "*",
+    "alt-three/bus": "^4.1",
+    "alt-three/validator": "^4.1",
+    "aws/aws-sdk-php": "^3.7",
+    "fruitcake/laravel-cors": "^v3.0.0",
+    "bugsnag/bugsnag-laravel": "^2.15",
+    "steffjenl/badger": "^2.0",
+    "steffjenl/emoji": "^3.0",
+    "steffjenl/twitter": "^3.0",
+    "chillerlan/php-qrcode": "^2.0",
+    "doctrine/dbal": "3.5.*",
+    "fideloper/proxy": "^4.0",
+    "graham-campbell/binput": "^9.1",
+    "graham-campbell/exceptions": "^14.1",
+    "graham-campbell/markdown": "^13.1",
+    "guzzlehttp/guzzle": "^6.3.3",
+    "jenssegers/date": "^v4.0.0",
+    "laravel/framework": "^7.0",
+    "laravel/helpers": "^1.5",
+    "laravel/tinker": "^2.0",
+    "mccool/laravel-auto-presenter": "^7.1",
+    "nexmo/client": "^1.5",
+    "pragmarx/google2fa": "^5.0",
+    "predis/predis": "^1.1",
+    "twig/twig": "^2.6"
+  },
+  "require-dev": {
+    "ext-sqlite3": "*",
+    "alt-three/testbench": "5.0.x-dev",
+    "barryvdh/laravel-debugbar": "^3.2",
+    "filp/whoops": "^2.3",
+    "fzaninotto/faker": "^1.8",
+    "graham-campbell/analyzer": "^3.1",
+    "mockery/mockery": "^1.2",
+    "phpunit/phpunit": "^8.5"
+  },
+  "suggest": {
+    "ext-apc": "APC Support cache driver."
+  },
+  "autoload": {
+    "classmap": [
+      "database"
     ],
-    "type": "project",
-    "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "James Brooks",
-            "email": "james@alt-three.com"
-        },
-        {
-            "name": "Graham Campbell",
-            "email": "graham@alt-three.com"
-        },
-        {
-            "name": "Joseph Cohen",
-            "email": "joe@alt-three.com"
-        }
+    "files": [
+      "app/helpers.php"
     ],
-    "replace": {
-        "paragonie/random_compat": "*",
-        "symfony/polyfill-mbstring": "*"
+    "psr-4": {
+      "CachetHQ\\Cachet\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CachetHQ\\Tests\\Cachet\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate"
+    ],
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover"
+    ],
+    "test": [
+      "@php artisan config:clear",
+      "vendor/bin/phpunit"
+    ],
+    "test-coverage": [
+      "@php artisan config:clear",
+      "vendor/bin/phpunit --coverage-clover=coverage.xml"
+    ]
+  },
+  "config": {
+    "platform": {
+      "php": "8.0.2"
     },
-    "require": {
-        "php": "^7.3.3",
-        "ext-mbstring": "*",
-        "ext-openssl": "*",
-        "ext-xml": "*",
-        "alt-three/bus": "^4.1",
-        "alt-three/validator": "^4.1",
-        "aws/aws-sdk-php": "^3.7",
-        "barryvdh/laravel-cors": "^0.11.0",
-        "bugsnag/bugsnag-laravel": "^2.15",
-        "cachethq/badger": "^2.0",
-        "cachethq/emoji": "^3.0",
-        "cachethq/twitter": "^3.0",
-        "chillerlan/php-qrcode": "^2.0",
-        "doctrine/dbal": "2.9.*",
-        "fideloper/proxy": "^4.0",
-        "graham-campbell/binput": "^6.0",
-        "graham-campbell/exceptions": "^13.1",
-        "graham-campbell/markdown": "^11.2",
-        "guzzlehttp/guzzle": "^6.3.3",
-        "jenssegers/date": "^3.4",
-        "laravel/framework": "^6.0",
-        "laravel/helpers": "^1.5",
-        "laravel/tinker": "^1.0",
-        "mccool/laravel-auto-presenter": "^7.1",
-        "nexmo/client": "^1.5",
-        "pragmarx/google2fa": "^5.0",
-        "predis/predis": "^1.1",
-        "twig/twig": "^2.6"
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.4-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:steffjenl/Twitter.git"
     },
-    "require-dev": {
-        "ext-sqlite3": "*",
-        "alt-three/testbench": "5.0.x-dev",
-        "barryvdh/laravel-debugbar": "^3.2",
-        "filp/whoops": "^2.3",
-        "fzaninotto/faker": "^1.8",
-        "graham-campbell/analyzer": "^2.1",
-        "mockery/mockery": "^1.2",
-        "phpunit/phpunit": "^7.4"
+    {
+      "type": "vcs",
+      "url": "git@github.com:steffjenl/Emoji.git"
     },
-    "suggest": {
-        "ext-apc": "APC Support cache driver."
-    },
-    "autoload": {
-        "classmap": [
-            "database"
-        ],
-        "files": [
-            "app/helpers.php"
-        ],
-        "psr-4": {
-            "CachetHQ\\Cachet\\": "app/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "CachetHQ\\Tests\\Cachet\\": "tests/"
-        }
-    },
-    "scripts": {
-        "post-root-package-install": [
-          "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-          "@php artisan key:generate"
-        ],
-        "post-autoload-dump": [
-          "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-          "@php artisan package:discover"
-        ],
-        "test": [
-          "@php artisan config:clear",
-          "vendor/bin/phpunit"
-        ],
-        "test-coverage": [
-          "@php artisan config:clear",
-          "vendor/bin/phpunit --coverage-clover=coverage.xml"
-        ]
-    },
-    "config": {
-        "platform": {
-            "php": "7.3.3"
-        },
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true,
-        "allow-plugins": {
-            "kylekatarnls/update-helper": true
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.4-dev"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    {
+      "type": "vcs",
+      "url": "git@github.com:steffjenl/Badger.git"
+    }
+  ]
 }
