@@ -12,23 +12,24 @@
 namespace CachetHQ\Cachet\Exceptions\Filters;
 
 use Exception;
+use GrahamCampbell\Exceptions\Filter\FilterInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-class ApiFilter
+class ApiFilter implements FilterInterface
 {
     /**
      * Filter and return the displayers.
      *
      * @param \GrahamCampbell\Exceptions\Displayer\DisplayerInterface[] $displayers
      * @param \Illuminate\Http\Request                                   $request
-     * @param \Exception                                                 $original
-     * @param \Exception                                                 $transformed
+     * @param \Throwable                                                 $original
+     * @param \Throwable                                                 $transformed
      * @param int                                                        $code
      *
      * @return \GrahamCampbell\Exceptions\Displayer\DisplayerInterface[]
      */
-    public function filter(array $displayers, Request $request, Exception $original, Exception $transformed, int $code)
+    public function filter(array $displayers, Request $request, \Throwable $original, \Throwable $transformed, int $code): array
     {
         if ($request->is('api*')) {
             foreach ($displayers as $index => $displayer) {

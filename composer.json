@@ -47,26 +47,29 @@
     "graham-campbell/binput": "^9.1",
     "graham-campbell/exceptions": "^14.1",
     "graham-campbell/markdown": "^13.1",
-    "guzzlehttp/guzzle": "^6.3.3",
+    "guzzlehttp/guzzle": "^7.0.1",
     "jenssegers/date": "^v4.0.0",
     "laravel/framework": "^8.0",
     "laravel/helpers": "^1.5",
-    "laravel/tinker": "^2.0",
+    "laravel/sanctum": "^2.11",
+    "laravel/tinker": "^2.5",
     "mccool/laravel-auto-presenter": "^7.1",
-    "nexmo/client": "^1.5",
+    "nexmo/client-core": "^2.9",
     "pragmarx/google2fa": "^5.0",
     "predis/predis": "^1.1",
-    "twig/twig": "^2.6"
+    "twig/twig": "^2.6",
+    "spatie/laravel-ignition": "^1.6"
   },
   "require-dev": {
     "ext-sqlite3": "*",
     "alt-three/testbench": "5.0.x-dev",
     "barryvdh/laravel-debugbar": "^3.2",
-    "spatie/laravel-ignition": "^1.6",
-    "fzaninotto/faker": "^1.8",
     "graham-campbell/analyzer": "^3.1",
-    "mockery/mockery": "^1.2",
-    "phpunit/phpunit": "^9.0"
+    "mockery/mockery": "^1.4.4",
+    "phpunit/phpunit": "^9.5.10",
+    "fakerphp/faker": "^1.9.1",
+    "laravel/sail": "^1.0.1",
+    "nunomaduro/collision": "^5.10"
   },
   "suggest": {
     "ext-apc": "APC Support cache driver."
@@ -79,7 +82,9 @@
       "app/helpers.php"
     ],
     "psr-4": {
-      "CachetHQ\\Cachet\\": "app/"
+      "CachetHQ\\Cachet\\": "app/",
+      "Database\\Factories\\": "database/factories/",
+      "Database\\Seeders\\": "database/seeders/"
     }
   },
   "autoload-dev": {

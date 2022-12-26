@@ -1,4 +1,4 @@
-@extends('errors::illustrated-layout')
+@extends('errors.illustrated-layout')
 
 @section('code', '404')
 @section('title', __('Page Not Found'))

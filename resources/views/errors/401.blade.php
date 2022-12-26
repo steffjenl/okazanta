@@ -1,4 +1,4 @@
-@extends('errors::illustrated-layout')
+@extends('errors.illustrated-layout')
 
 @section('code', '401')
 @section('title', __('Unauthorized'))
