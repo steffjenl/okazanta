@@ -28,8 +28,8 @@ return [
     */
 
     'transformers' => [
-        GrahamCampbell\Exceptions\Transformer\BadHeadersTransformer::class,
-        GrahamCampbell\Exceptions\Transformer\BadHostTransformer::class,
+        //GrahamCampbell\Exceptions\Transformer\BadHeadersTransformer::class,
+        //GrahamCampbell\Exceptions\Transformer\BadHostTransformer::class,
         GrahamCampbell\Exceptions\Transformer\AuthTransformer::class,
         GrahamCampbell\Exceptions\Transformer\CsrfTransformer::class,
         GrahamCampbell\Exceptions\Transformer\ModelTransformer::class,
@@ -51,13 +51,13 @@ return [
     */
 
     'displayers' => [
-        CachetHQ\Cachet\Exceptions\Displayers\RedirectDisplayer::class,
+        CachetHQ\Cachet\Exceptions\Displayers\JsonValidationDisplayer::class,
         CachetHQ\Cachet\Exceptions\Displayers\MaintenanceDisplayer::class,
         CachetHQ\Cachet\Exceptions\Displayers\RedirectDisplayer::class,
         CachetHQ\Cachet\Exceptions\Displayers\SettingsDisplayer::class,
         CachetHQ\Cachet\Exceptions\Displayers\ThrottleDisplayer::class,
         GrahamCampbell\Exceptions\Displayer\DebugDisplayer::class,
-        GrahamCampbell\Exceptions\Displayer\ViewDisplayer::class,
+        // GrahamCampbell\Exceptions\Displayer\ViewDisplayer::class,
         GrahamCampbell\Exceptions\Displayer\HtmlDisplayer::class,
         GrahamCampbell\Exceptions\Displayer\JsonDisplayer::class,
         GrahamCampbell\Exceptions\Displayer\JsonApiDisplayer::class,
@@ -113,9 +113,9 @@ return [
         Illuminate\Auth\Access\AuthorizationException::class                           => 'warning',
         Illuminate\Database\Eloquent\ModelNotFoundException::class                     => 'warning',
         Illuminate\Session\TokenMismatchException::class                               => 'notice',
-        Symfony\Component\HttpFoundation\Exception\RequestExceptionInterface::class    => 'notice',
-        Symfony\Component\HttpKernel\Exception\NotFoundHttpException::class            => 'notice',
-        Symfony\Component\HttpKernel\Exception\UnprocessableEntityHttpException::class => 'error',
+        //Symfony\Component\HttpFoundation\Exception\RequestExceptionInterface::class    => 'notice',
+        //Symfony\Component\HttpKernel\Exception\NotFoundHttpException::class            => 'notice',
+        //Symfony\Component\HttpKernel\Exception\UnprocessableEntityHttpException::class => 'error',
         Symfony\Component\HttpKernel\Exception\HttpExceptionInterface::class           => 'warning',
         Exception::class                                                               => 'error',
         Throwable::class                                                               => 'critical',
