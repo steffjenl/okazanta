@@ -55,7 +55,7 @@
     "laravel/tinker": "^2.5",
     "mccool/laravel-auto-presenter": "^7.1",
     "nexmo/laravel": "^3.0",
-    "pragmarx/google2fa": "^5.0",
+    "pragmarx/google2fa": "^8.0",
     "predis/predis": "^1.1",
     "spatie/laravel-ignition": "^1.6",
     "steffjenl/badger": "^2.0",

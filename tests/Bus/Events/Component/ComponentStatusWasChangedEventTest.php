@@ -45,9 +45,8 @@ class ComponentStatusWasChangedEventTest extends AbstractComponentEventTestCase
         Notification::fake();
         Mail::fake();
         $this->app['events']->dispatch(new ComponentStatusWasChangedEvent($user, $component, 1, 2, false));
-        return true;
+
         Mail::assertSent(ComponentStatusChangedNotification::class, function ($mail) use ($subscriber, $component) {
-            return true;
             return $mail->hasTo($subscriber->email) &&
                 $mail->hasSubject(trans('notifications.component.status_update.mail.subject')) &&
                 $mail->assertSeeInHtml($component->name) &&
