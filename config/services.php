@@ -41,7 +41,7 @@ return [
         'secret'   => env('NEXMO_SECRET'),
         'sms_from' => env('NEXMO_SMS_FROM'),
     ],
-
+    
     'ses' => [
         'key'    => env('MAIL_USERNAME'),
         'secret' => env('MAIL_PASSWORD'),

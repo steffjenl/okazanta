@@ -15,7 +15,7 @@ use CachetHQ\Cachet\Models\Incident;
 use CachetHQ\Cachet\Models\IncidentUpdate;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
-use Illuminate\Notifications\Messages\NexmoMessage;
+use Illuminate\Notifications\Messages\VonageMessage;
 use Illuminate\Notifications\Messages\SlackMessage;
 use Illuminate\Notifications\Notification;
 use McCool\LaravelAutoPresenter\Facades\AutoPresenter;
@@ -96,15 +96,15 @@ class IncidentUpdatedNotification extends Notification
      *
      * @param mixed $notifiable
      *
-     * @return \Illuminate\Notifications\Messages\NexmoMessage
+     * @return \Illuminate\Notifications\Messages\VonageMessage
      */
-    public function toNexmo($notifiable)
+    public function toVonage($notifiable)
     {
         $content = trans('notifications.incident.update.sms.content', [
             'name' => $this->update->incident->name,
         ]);
 
-        return (new NexmoMessage())->content($content);
+        return (new VonageMessage())->content($content);
     }
 
     /**

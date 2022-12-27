@@ -7,7 +7,7 @@
 {{ $actionText }}
 @endcomponent
 
-@lang('Thanks,')<br>
+{{ trans('cachet.thanks') }}<br>
 {{ Config::get('setting.app_name') }}
 
 {!! Config::get('setting.mail_signature') !!}

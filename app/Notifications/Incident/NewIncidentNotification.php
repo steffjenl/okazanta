@@ -14,7 +14,7 @@ namespace CachetHQ\Cachet\Notifications\Incident;
 use CachetHQ\Cachet\Models\Incident;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
-use Illuminate\Notifications\Messages\NexmoMessage;
+use Illuminate\Notifications\Messages\VonageMessage;
 use Illuminate\Notifications\Messages\SlackMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\Config;
@@ -92,11 +92,11 @@ class NewIncidentNotification extends Notification
      *
      * @param mixed $notifiable
      *
-     * @return \Illuminate\Notifications\Messages\NexmoMessage
+     * @return \Illuminate\Notifications\Messages\VonageMessage
      */
-    public function toNexmo($notifiable)
+    public function toVonage($notifiable)
     {
-        return (new NexmoMessage())->content(trans('notifications.incident.new.sms.content', [
+        return (new VonageMessage())->content(trans('notifications.incident.new.sms.content', [
             'name' => $this->incident->name,
         ]));
     }

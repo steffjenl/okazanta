@@ -55,12 +55,13 @@
                                 <?php
                                 $google2fa = (new \PragmaRX\Google2FA\Google2FA());
                                 $google2fa_url = $google2fa->getQRCodeUrl(
-                                    'Cachet',
+                                    $siteTitle,
                                     $currentUser->email,
                                     $currentUser->google_2fa_secret
                                 );
                                 ?>
                                 <img width="200" height="200" src="{{(new \chillerlan\QRCode\QRCode())->render($google2fa_url)}}"  alt="qr code"/>
+                                <span>{{ $currentUser->google_2fa_secret }}</span>
                                 <span class='help-block'>{!! trans('forms.user.2fa.help') !!}</span>
                             </div>
                             @endif
