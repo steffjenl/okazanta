@@ -27,6 +27,9 @@
 
     <link href="{{ Request::fullUrl() }}" rel="canonical">
 
+    <!-- RSS -->
+    @include('feed::links')
+
     @if (isset($favicon))
     <link rel="icon" href="{{ asset("/img/{$favicon}.ico") }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset("/img/{$favicon}.png") }}" type="image/png">
