@@ -1,12 +1,13 @@
+/.idea
+/.vagrant
 /node_modules
 /public/hot
 /public/storage
 /storage/*.key
 /vendor
-/.idea
-/.vagrant
+.env
+.phpunit.result.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log
-.env
 package-lock.json
