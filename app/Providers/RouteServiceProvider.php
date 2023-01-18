@@ -108,12 +108,14 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(Router $router)
     {
-        Route::feeds();
+        $applyAlwaysAuthenticate = $this->app['config']->get('setting.always_authenticate', false);
 
-        $router->group(['namespace' => $this->namespace, 'as' => 'core::'], function (Router $router) {
+        if (!$applyAlwaysAuthenticate) {
+            Route::feeds();
+        }
+        $router->group(['namespace' => $this->namespace, 'as' => 'core::'], function (Router $router) use ($applyAlwaysAuthenticate) {
             $path = app_path('Http/Routes');
 
-            $applyAlwaysAuthenticate = $this->app['config']->get('setting.always_authenticate', false);
             $AllFileIterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($path));
             $PhpFileIterator = new \RegexIterator($AllFileIterator, '/^.+\.php$/i', \RecursiveRegexIterator::GET_MATCH);
 

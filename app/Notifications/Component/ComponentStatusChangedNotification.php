@@ -18,6 +18,7 @@ use Illuminate\Notifications\Messages\VonageMessage;
 use Illuminate\Notifications\Messages\SlackMessage;
 use Illuminate\Notifications\Notification;
 use McCool\LaravelAutoPresenter\Facades\AutoPresenter;
+use Illuminate\Support\Facades\URL;
 
 /**
  * This is the component status changed notification class.
@@ -83,6 +84,8 @@ class ComponentStatusChangedNotification extends Notification
             'new_status' => trans("cachet.components.status.{$this->status}"),
         ]);
 
+        $manageUrl = URL::signedRoute(cachet_route_generator('subscribe.manage'), ['code' => $notifiable->verify_code]);
+
         return (new MailMessage())
             ->subject(trans('notifications.component.status_update.mail.subject'))
             ->markdown('notifications.component.update', [
@@ -91,7 +94,7 @@ class ComponentStatusChangedNotification extends Notification
                 'unsubscribeText'        => trans('cachet.subscriber.unsubscribe'),
                 'unsubscribeUrl'         => cachet_route('subscribe.unsubscribe', $notifiable->verify_code),
                 'manageSubscriptionText' => trans('cachet.subscriber.manage_subscription'),
-                'manageSubscriptionUrl'  => cachet_route('subscribe.manage', $notifiable->verify_code),
+                'manageSubscriptionUrl'  => $manageUrl,
             ]);
     }
 
