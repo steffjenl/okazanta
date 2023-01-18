@@ -12,6 +12,7 @@
 namespace CachetHQ\Cachet\Notifications\Schedule;
 
 use CachetHQ\Cachet\Models\Schedule;
+use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -20,6 +21,10 @@ use Illuminate\Notifications\Messages\SlackMessage;
 use Illuminate\Notifications\Notification;
 use McCool\LaravelAutoPresenter\Facades\AutoPresenter;
 use Illuminate\Support\Facades\URL;
+use Spatie\IcalendarGenerator\Components\Calendar;
+use Spatie\IcalendarGenerator\Components\Event;
+use Spatie\IcalendarGenerator\Properties\TextProperty;
+use Illuminate\Support\Facades\Config;
 
 /**
  * This is the new schedule notification class.
@@ -75,6 +80,17 @@ class NewScheduleNotification extends Notification implements ShouldQueue
             'date' => $this->schedule->scheduled_at_formatted,
         ]);
 
+        $calendar = Calendar::create()
+            ->productIdentifier(Config::get('setting.app_name'))
+            ->event(function (Event $event) use ($notifiable, $content) {
+                $event->name($this->schedule->name)
+                    ->organizer(Config::get('mail.from.address'),Config::get('mail.from.name'))
+                    ->description($content)
+                    ->attendee($notifiable->email)
+                    ->startsAt(Carbon::parse($this->schedule->scheduled_at))
+                    ->endsAt(Carbon::parse($this->schedule->completed_at));
+            });
+
         $manageUrl = URL::signedRoute(cachet_route_generator('subscribe.manage'), ['code' => $notifiable->verify_code]);
 
         return (new MailMessage())
@@ -85,6 +101,9 @@ class NewScheduleNotification extends Notification implements ShouldQueue
                 'unsubscribeUrl'         => cachet_route('subscribe.unsubscribe', $notifiable->verify_code),
                 'manageSubscriptionText' => trans('cachet.subscriber.manage_subscription'),
                 'manageSubscriptionUrl'  => $manageUrl,
+            ])
+            ->attachData($calendar->get(), 'schedule.ics', [
+                'mime' => 'text/calendar; charset=UTF-8',
             ]);
     }
 

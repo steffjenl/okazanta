@@ -57,6 +57,7 @@
     "nexmo/laravel": "^3.0",
     "pragmarx/google2fa": "^8.0",
     "predis/predis": "^1.1",
+    "spatie/icalendar-generator": "^2.5",
     "spatie/laravel-feed": "^4.2",
     "spatie/laravel-ignition": "^1.6",
     "steffjenl/badger": "^2.0",
