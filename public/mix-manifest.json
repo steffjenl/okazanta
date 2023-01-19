@@ -1,8 +1,12 @@
 {
-    "/dist/js/vendor.js": "/dist/js/vendor.js?id=e330d11061bb920e9441",
-    "/dist/js/app.js": "/dist/js/app.js?id=85f4e87f2c37c96e623d",
-    "/dist/css/dashboard/dashboard.css": "/dist/css/dashboard/dashboard.css?id=b6a9327dd3b9b7c7ed2d",
-    "/dist/css/app.css": "/dist/css/app.css?id=c7bf7628a7a22dfec2ed",
-    "/dist/js/manifest.js": "/dist/js/manifest.js?id=40dcfff9d09d402daf38",
-    "/dist/js/all.js": "/dist/js/all.js?id=bbc128edf91b2898cdf0"
+    "/dist/js/app.js": "/dist/js/app.js?id=fdd8788b75c8c3034045f9e23ba50f6c",
+    "/dist/js/manifest.js": "/dist/js/manifest.js?id=9c436727d9f43acda05ac08f4ea56078",
+    "/dist/css/app.css": "/dist/css/app.css?id=fa030ce151b89239ca2878fdebcb04bd",
+    "/dist/css/dashboard/dashboard.css": "/dist/css/dashboard/dashboard.css?id=d711aa3226967421086936183650b452",
+    "/dist/js/vendor.js": "/dist/js/vendor.js?id=9c5a3c799d14bade109f1a8e65294748",
+    "/fonts/ionicons.eot": "/fonts/ionicons.eot?id=6954ee31d03dbff1c0976d1c05d39975",
+    "/fonts/ionicons.svg": "/fonts/ionicons.svg?id=28df6ee7b407fd8a14b40bc01f4fd3ae",
+    "/fonts/ionicons.ttf": "/fonts/ionicons.ttf?id=df66f7c1d2cc391b16e7acd04aba3575",
+    "/fonts/ionicons.woff": "/fonts/ionicons.woff?id=0822c9961317a6fe99362ebc0e4c45a1",
+    "/dist/js/all.js": "/dist/js/all.js?id=09561f46711d7e3b4eef3da414b76383"
 }
