@@ -44,6 +44,7 @@
     "laravel/sanctum": "^3.2",
     "laravel/tinker": "^2.8",
     "mccool/laravel-auto-presenter": "*",
+    "pragmarx/google2fa": "^8.0",
     "predis/predis": "*",
     "spatie/icalendar-generator": "*",
     "spatie/laravel-feed": "*",
