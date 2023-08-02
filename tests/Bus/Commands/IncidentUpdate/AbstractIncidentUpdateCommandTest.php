@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace CachetHQ\Tests\Cachet\Bus\Events\IncidentUpdate;
+namespace CachetHQ\Tests\Cachet\Bus\Commands\IncidentUpdate;
 
 use AltThree\TestBench\EventTrait;
 use CachetHQ\Cachet\Bus\Events\IncidentUpdate\IncidentUpdateEventInterface;
@@ -24,7 +24,7 @@ abstract class AbstractIncidentUpdateCommandTest extends AbstractTestCase
 {
     use EventTrait;
 
-    protected function getEventInterfaces()
+    protected function getEventInterfaces(): array
     {
         return [IncidentUpdateEventInterface::class];
     }

@@ -41,6 +41,11 @@ $app->singleton(
     CachetHQ\Cachet\Exceptions\Handler::class
 );
 
+$app->singleton(
+    GrahamCampbell\Exceptions\Identifier\IdentifierInterface::class,
+    GrahamCampbell\Exceptions\Identifier\HashingIdentifier::class
+);
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application

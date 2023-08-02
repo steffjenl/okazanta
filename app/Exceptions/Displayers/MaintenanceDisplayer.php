@@ -53,7 +53,7 @@ class MaintenanceDisplayer implements DisplayerInterface
      *
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function display(Throwable $exception, string $id, int $code, array $headers)
+    public function display(Throwable $exception, string $id, int $code, array $headers): Response
     {
         return new Response($this->render(), $code, array_merge($headers, ['Content-Type' => $this->contentType()]));
     }
@@ -73,7 +73,7 @@ class MaintenanceDisplayer implements DisplayerInterface
      *
      * @return string
      */
-    public function contentType()
+    public function contentType(): string
     {
         return 'text/html';
     }
@@ -87,7 +87,7 @@ class MaintenanceDisplayer implements DisplayerInterface
      *
      * @return bool
      */
-    public function canDisplay(Throwable $original, Throwable $transformed, int $code)
+    public function canDisplay(Throwable $original, Throwable $transformed, int $code): bool
     {
         return $transformed instanceof MaintenanceModeException;
     }
@@ -97,7 +97,7 @@ class MaintenanceDisplayer implements DisplayerInterface
      *
      * @return bool
      */
-    public function isVerbose()
+    public function isVerbose(): bool
     {
         return false;
     }
