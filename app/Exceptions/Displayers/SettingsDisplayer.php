@@ -47,7 +47,7 @@ class SettingsDisplayer implements DisplayerInterface
      *
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function display(Throwable $exception, string $id, int $code, array $headers)
+    public function display(Throwable $exception, string $id, int $code, array $headers): \Symfony\Component\HttpFoundation\Response
     {
         return cachet_redirect('setup');
     }
@@ -57,7 +57,7 @@ class SettingsDisplayer implements DisplayerInterface
      *
      * @return string
      */
-    public function contentType()
+    public function contentType(): string
     {
         return 'text/html';
     }
@@ -71,7 +71,7 @@ class SettingsDisplayer implements DisplayerInterface
      *
      * @return bool
      */
-    public function canDisplay(Throwable $original, Throwable $transformed, int $code)
+    public function canDisplay(Throwable $original, Throwable $transformed, int $code): bool
     {
         return ($transformed instanceof ReadException) && !$this->request->is('setup*');
     }
@@ -81,7 +81,7 @@ class SettingsDisplayer implements DisplayerInterface
      *
      * @return bool
      */
-    public function isVerbose()
+    public function isVerbose(): bool
     {
         return false;
     }

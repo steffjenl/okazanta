@@ -47,7 +47,7 @@ class RedirectDisplayer implements DisplayerInterface
      *
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function display(Throwable $exception, string $id, int $code, array $headers)
+    public function display(Throwable $exception, string $id, int $code, array $headers): \Symfony\Component\HttpFoundation\Response
     {
         return redirect()->guest('auth/login');
     }
@@ -57,7 +57,7 @@ class RedirectDisplayer implements DisplayerInterface
      *
      * @return string
      */
-    public function contentType()
+    public function contentType(): string
     {
         return 'text/html';
     }
@@ -71,7 +71,7 @@ class RedirectDisplayer implements DisplayerInterface
      *
      * @return bool
      */
-    public function canDisplay(Throwable $original, Throwable $transformed, int $code)
+    public function canDisplay(Throwable $original, Throwable $transformed, int $code): bool
     {
         $redirect = $transformed instanceof HttpExceptionInterface && $transformed->getStatusCode() === 401;
 
@@ -83,7 +83,7 @@ class RedirectDisplayer implements DisplayerInterface
      *
      * @return bool
      */
-    public function isVerbose()
+    public function isVerbose(): bool
     {
         return false;
     }

@@ -38,7 +38,6 @@ class Kernel extends HttpKernel
     protected $middleware = [
         TrustProxies::class,
         CheckForMaintenanceMode::class,
-        \Fruitcake\Cors\HandleCors::class,
     ];
 
     /**
@@ -53,7 +52,6 @@ class Kernel extends HttpKernel
         'auth'            => Authenticate::class,
         'cache'           => CacheControl::class,
         'can'             => Authorize::class,
-        'cors'            => \Fruitcake\Cors\HandleCors::class,
         'guest'           => RedirectIfAuthenticated::class,
         'localize'        => Localize::class,
         'ready'           => ReadyForUse::class,

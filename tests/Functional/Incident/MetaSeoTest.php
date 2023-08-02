@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace CachetHQ\Tests\Cachet\Functional\Bus\Commands\Incident;
+namespace CachetHQ\Tests\Cachet\Functional\Incident;
 
 use CachetHQ\Cachet\Bus\Commands\Incident\CreateIncidentCommand;
 use CachetHQ\Cachet\Models\Incident;
@@ -51,7 +51,7 @@ class MetaSeoTest extends AbstractTestCase
      * @param array  $data
      * @param string $dataName
      */
-    public function __construct($name = null, array $data = [], $dataName = '')
+    public function __construct($name = null, array $data = [], string $dataName = '')
     {
         parent::__construct($name, $data, $dataName);
         $this->fakerFactory = \Faker\Factory::create();
