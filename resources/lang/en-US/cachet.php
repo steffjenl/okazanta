@@ -138,11 +138,12 @@ return [
 
     // Other
     'home'            => 'Home',
-    'powered_by'      => 'Powered by <a href="https://Okazantahq.io" class="links">Okazanta</a>.',
+    'powered_by'      => 'Powered by <a href="https://okazanta.com" class="links">Okazanta</a>.',
     'timezone'        => 'Times are shown in :timezone.',
     'about_this_site' => 'About This Site',
     'rss-feed'        => 'RSS',
     'atom-feed'       => 'Atom',
     'feed'            => 'Status Feed',
+    'thanks'          => 'Best regards,',
 
 ];

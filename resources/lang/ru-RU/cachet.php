@@ -138,7 +138,7 @@ return [
 
     // Other
     'home'            => 'Главный экран',
-    'powered_by'      => 'Работает на <a href="https://Okazantahq.io" class="links">Okazanta</a>.',
+    'powered_by'      => 'Работает на <a href="https://okazanta.com" class="links">Okazanta</a>.',
     'timezone'        => 'Times are shown in :timezone.',
     'about_this_site' => 'Об этом сайте',
     'rss-feed'        => 'RSS',

@@ -138,7 +138,7 @@ return [
 
     // Other
     'home'            => 'Home',
-    'powered_by'      => 'Powered by <a href="https://Okazantahq.io" class="links">Okazanta</a>.',
+    'powered_by'      => 'Powered by <a href="https://okazanta.com" class="links">Okazanta</a>.',
     'timezone'        => 'Tider vises i :timezone.',
     'about_this_site' => 'Om denne siden',
     'rss-feed'        => 'RSS',

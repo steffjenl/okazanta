@@ -138,7 +138,7 @@ return [
 
     // Other
     'home'            => 'Startseite',
-    'powered_by'      => 'Powered by <a href="https://Okazantahq.io" class="links">Okazanta</a>.',
+    'powered_by'      => 'Powered by <a href="https://okazanta.com" class="links">Okazanta</a>.',
     'timezone'        => 'Uhrzeiten werden in :timezone angezeigt.',
     'about_this_site' => 'Über diese Seite',
     'rss-feed'        => 'RSS',

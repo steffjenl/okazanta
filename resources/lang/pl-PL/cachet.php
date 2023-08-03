@@ -138,7 +138,7 @@ return [
 
     // Other
     'home'            => 'Strona Główna',
-    'powered_by'      => 'Obsługiwany przez <a href="https://Okazantahq.io" class="links">Okazanta</a>.',
+    'powered_by'      => 'Obsługiwany przez <a href="https://okazanta.com" class="links">Okazanta</a>.',
     'timezone'        => 'Times are shown in :timezone.',
     'about_this_site' => 'Über diese Seite',
     'rss-feed'        => 'RSS',

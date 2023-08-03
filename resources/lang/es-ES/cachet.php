@@ -138,7 +138,7 @@ return [
 
     // Other
     'home'            => 'Inicio',
-    'powered_by'      => 'La página de estado de :app está proporcionada por <a href="https://Okazantahq.io">Okazanta</a>.',
+    'powered_by'      => 'La página de estado de :app está proporcionada por <a href="https://okazanta.com">Okazanta</a>.',
     'timezone'        => 'Los horarios son mostrados en :timezone.',
     'about_this_site' => 'Acerca de este sitio',
     'rss-feed'        => 'RSS',

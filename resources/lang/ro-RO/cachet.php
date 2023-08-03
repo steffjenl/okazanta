@@ -138,7 +138,7 @@ return [
 
     // Other
     'home'            => 'Acasă',
-    'powered_by'      => 'Cu sprijinul <a href="https://Okazantahq.io" class="links">Okazanta</a>.',
+    'powered_by'      => 'Cu sprijinul <a href="https://okazanta.com" class="links">Okazanta</a>.',
     'timezone'        => 'Times are shown in :timezone.',
     'about_this_site' => 'Despre acest Site',
     'rss-feed'        => 'RSS',

@@ -138,7 +138,7 @@ return [
 
     // Other
     'home'            => 'Hlavní stránka',
-    'powered_by'      => 'Vytvořeno pomocí <a href="https://Okazantahq.io" class="links">Okazanta</a>.',
+    'powered_by'      => 'Vytvořeno pomocí <a href="https://okazanta.com" class="links">Okazanta</a>.',
     'timezone'        => 'Časová zóna je :timezone.',
     'about_this_site' => 'O tomto webu',
     'rss-feed'        => 'RSS',

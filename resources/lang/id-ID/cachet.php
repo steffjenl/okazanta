@@ -138,7 +138,7 @@ return [
 
     // Other
     'home'            => 'Depan',
-    'powered_by'      => 'Ditenagai oleh <a href="https://Okazantahq.io" class="links"> Okazanta</a>.',
+    'powered_by'      => 'Ditenagai oleh <a href="https://okazanta.com" class="links"> Okazanta</a>.',
     'timezone'        => 'Waktu dalam :timezone.',
     'about_this_site' => 'Tentang situs ini',
     'rss-feed'        => 'RSS',

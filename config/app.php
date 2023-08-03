@@ -21,7 +21,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Cachet',
+    'name' => 'Okazanta',
 
     /*
     |--------------------------------------------------------------------------
@@ -86,7 +86,7 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'en'),
+    'locale' => env('APP_LOCALE', 'en-US'),
 
     /*
     |--------------------------------------------------------------------------
@@ -99,7 +99,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'en-US',
 
     /*
     |--------------------------------------------------------------------------

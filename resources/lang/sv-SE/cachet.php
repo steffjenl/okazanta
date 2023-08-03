@@ -138,7 +138,7 @@ return [
 
     // Other
     'home'            => 'Hem',
-    'powered_by'      => 'Drivs av <a href="https://Okazantahq.io" class="links">Okazanta</a>.',
+    'powered_by'      => 'Drivs av <a href="https://okazanta.com" class="links">Okazanta</a>.',
     'timezone'        => 'Times are shown in :timezone.',
     'about_this_site' => 'Om sidan',
     'rss-feed'        => 'RSS',
