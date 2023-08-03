@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -12,7 +12,7 @@
 return [
 
     'dashboard'          => 'Dashboard',
-    'writeable_settings' => 'Nie można zapisać zmian w pliku konfiguracyjnym Cachet. Proszę sprawdzić uprawnienia do katalogu <code>./bootstrap/cachet</code>, serwer www musi mieć możliwość zapisu w tym katalogu.',
+    'writeable_settings' => 'Nie można zapisać zmian w pliku konfiguracyjnym Okazanta. Proszę sprawdzić uprawnienia do katalogu <code>./bootstrap/Okazanta</code>, serwer www musi mieć możliwość zapisu w tym katalogu.',
 
     // Incidents
     'incidents' => [
@@ -230,8 +230,8 @@ return [
             'mail'  => 'Mail',
             'test'  => 'Test',
             'email' => [
-                'subject' => 'Test notification from Cachet',
-                'body'    => 'This is a test notification from Cachet.',
+                'subject' => 'Test notification from Okazanta',
+                'body'    => 'This is a test notification from Okazanta.',
             ],
         ],
         'security' => [
@@ -251,9 +251,9 @@ return [
         'credits' => [
             'credits'       => 'Autorzy',
             'contributors'  => 'Współtwórcy',
-            'license'       => 'Catchet jest otwartym źródłem z licencją BSD utworzonym przez <a href="https://alt-three.com/?utm_source=cachet&utm_medium=credits&utm_campaign=Cachet%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
+            'license'       => 'Catchet jest otwartym źródłem z licencją BSD utworzonym przez <a href="https://alt-three.com/?utm_source=Okazanta&utm_medium=credits&utm_campaign=Okazanta%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
             'backers-title' => 'Patronaci i sponsorzy',
-            'backers'       => 'Jeśli chciałbyś wspomóc przyszły rozwój sprawdź kampanię <a href="https://patreon.com/jbrooksuk" target="_blank">Cachet Patreon</a>.',
+            'backers'       => 'Jeśli chciałbyś wspomóc przyszły rozwój sprawdź kampanię <a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">Okazanta PayPal</a>.',
             'thank-you'     => 'Dziękujemy każdemu :count współtwórcy.',
         ],
     ],
@@ -280,8 +280,8 @@ return [
 
     // Widgets
     'widgets' => [
-        'support'          => 'Wspomóż Cachet',
-        'support_subtitle' => 'Sprawdź również naszą stronę na <strong><a href="https://patreon.com/jbrooksuk" target="_blank">Patreon</a></strong>!',
+        'support'          => 'Wspomóż Okazanta',
+        'support_subtitle' => 'Sprawdź również naszą stronę na <strong><a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">PayPal</a></strong>!',
         'news'             => 'Aktualności',
         'news_subtitle'    => 'Pobierz najnowszą aktualizację',
     ],

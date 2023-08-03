@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -113,7 +113,7 @@ return [
     ],
 
     'system' => [
-        'update' => 'There is a newer version of Cachet available. You can learn how to update <a href="https://docs.cachethq.io/docs/updating-cachet">here</a>!',
+        'update' => 'There is a newer version of Okazanta available. You can learn how to update <a href="https://docs.Okazantahq.io/docs/updating-Okazanta">here</a>!',
     ],
 
     // Modal
@@ -138,7 +138,7 @@ return [
 
     // Other
     'home'            => 'Home',
-    'powered_by'      => 'Powered by <a href="https://cachethq.io" class="links">Cachet</a>.',
+    'powered_by'      => 'Powered by <a href="https://Okazantahq.io" class="links">Okazanta</a>.',
     'timezone'        => 'Times are shown in :timezone.',
     'about_this_site' => '이 사이트에 대해',
     'rss-feed'        => 'RSS',

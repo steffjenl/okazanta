@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -181,7 +181,7 @@ return [
             'allowed-domains'           => 'Erlaubte Domains',
             'allowed-domains-help'      => 'Durch Kommata trennen. Die oben genannte Domain ist standardmäßig erlaubt.',
             'always-authenticate'       => 'Immer anmelden',
-            'always-authenticate-help'  => 'Anmeldung für alle Cachet Seiten erzwingen',
+            'always-authenticate-help'  => 'Anmeldung für alle Okazanta Seiten erzwingen',
         ],
         'stylesheet' => [
             'custom-css' => 'Benutzerdefiniertes Stylesheet',
@@ -209,7 +209,7 @@ return [
         'email'          => 'E-Mail',
         'password'       => 'Passwort',
         'api-token'      => 'API Token',
-        'api-token-help' => 'Wenn sie ihren API-Token neu generieren, können bestehende Anwendungen nicht mehr auf Cachet zugreifen.',
+        'api-token-help' => 'Wenn sie ihren API-Token neu generieren, können bestehende Anwendungen nicht mehr auf Okazanta zugreifen.',
         'gravatar'       => 'Change your profile picture at Gravatar.',
         'user_level'     => 'Benutzerebene',
         'levels'         => [

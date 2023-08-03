@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6da5eb3c130b8bda905d3022778ec001",
+    "content-hash": "548fff9d7cc83f30ed8b52ecf395957d",
     "packages": [
         {
             "name": "brick/math",
@@ -1898,16 +1898,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "3a494dc7dc1d7d12e511890177ae2d0e6c107da6"
+                "reference": "111166291a0f8130081195ac4556a5587d7f1b5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/3a494dc7dc1d7d12e511890177ae2d0e6c107da6",
-                "reference": "3a494dc7dc1d7d12e511890177ae2d0e6c107da6",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/111166291a0f8130081195ac4556a5587d7f1b5d",
+                "reference": "111166291a0f8130081195ac4556a5587d7f1b5d",
                 "shasum": ""
             },
             "require": {
@@ -1961,7 +1961,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.0.0"
+                "source": "https://github.com/guzzle/promises/tree/2.0.1"
             },
             "funding": [
                 {
@@ -1977,20 +1977,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-05-21T13:50:22+00:00"
+            "time": "2023-08-03T15:11:55+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "b635f279edd83fc275f822a1188157ffea568ff6"
+                "reference": "8bd7c33a0734ae1c5d074360512beb716bef3f77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/b635f279edd83fc275f822a1188157ffea568ff6",
-                "reference": "b635f279edd83fc275f822a1188157ffea568ff6",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/8bd7c33a0734ae1c5d074360512beb716bef3f77",
+                "reference": "8bd7c33a0734ae1c5d074360512beb716bef3f77",
                 "shasum": ""
             },
             "require": {
@@ -2077,7 +2077,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.5.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.6.0"
             },
             "funding": [
                 {
@@ -2093,7 +2093,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-17T16:11:26+00:00"
+            "time": "2023-08-03T15:06:02+00:00"
         },
         {
             "name": "guzzlehttp/uri-template",
@@ -2570,21 +2570,21 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.1.2",
+            "version": "v0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "a5295e14c9d3e94ff24683e5db0b0a29fad8f6e1"
+                "reference": "562c26eb82c85789ef36291112cc27d730d3fed6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/a5295e14c9d3e94ff24683e5db0b0a29fad8f6e1",
-                "reference": "a5295e14c9d3e94ff24683e5db0b0a29fad8f6e1",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/562c26eb82c85789ef36291112cc27d730d3fed6",
+                "reference": "562c26eb82c85789ef36291112cc27d730d3fed6",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "illuminate/collections": "^10.0",
+                "illuminate/collections": "^10.0|^11.0",
                 "php": "^8.1",
                 "symfony/console": "^6.2"
             },
@@ -2612,9 +2612,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.1.2"
+                "source": "https://github.com/laravel/prompts/tree/v0.1.3"
             },
-            "time": "2023-08-02T13:59:58+00:00"
+            "time": "2023-08-02T19:57:10+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -3148,16 +3148,16 @@
         },
         {
             "name": "league/mime-type-detection",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/mime-type-detection.git",
-                "reference": "ff6248ea87a9f116e78edd6002e39e5128a0d4dd"
+                "reference": "c7f2872fb273bf493811473dafc88d60ae829f48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/ff6248ea87a9f116e78edd6002e39e5128a0d4dd",
-                "reference": "ff6248ea87a9f116e78edd6002e39e5128a0d4dd",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/c7f2872fb273bf493811473dafc88d60ae829f48",
+                "reference": "c7f2872fb273bf493811473dafc88d60ae829f48",
                 "shasum": ""
             },
             "require": {
@@ -3188,7 +3188,7 @@
             "description": "Mime-type detection for Flysystem",
             "support": {
                 "issues": "https://github.com/thephpleague/mime-type-detection/issues",
-                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.11.0"
+                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.12.0"
             },
             "funding": [
                 {
@@ -3200,7 +3200,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-17T13:12:02+00:00"
+            "time": "2023-08-03T07:14:11+00:00"
         },
         {
             "name": "mccool/laravel-auto-presenter",
@@ -5046,12 +5046,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/steffjenl/Badger.git",
-                "reference": "3d3ea04ed6b6819cb613c2b9a9fe1b8fb08d39d2"
+                "reference": "1843488d06ac0da4221e84c95a80f1b6fe7c1208"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/steffjenl/Badger/zipball/3d3ea04ed6b6819cb613c2b9a9fe1b8fb08d39d2",
-                "reference": "3d3ea04ed6b6819cb613c2b9a9fe1b8fb08d39d2",
+                "url": "https://api.github.com/repos/steffjenl/Badger/zipball/1843488d06ac0da4221e84c95a80f1b6fe7c1208",
+                "reference": "1843488d06ac0da4221e84c95a80f1b6fe7c1208",
                 "shasum": ""
             },
             "require": {
@@ -5112,7 +5112,7 @@
             "support": {
                 "source": "https://github.com/steffjenl/Badger/tree/master"
             },
-            "time": "2023-08-02T20:33:59+00:00"
+            "time": "2023-08-02T21:01:21+00:00"
         },
         {
             "name": "steffjenl/bus",
@@ -5120,12 +5120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/steffjenl/Bus.git",
-                "reference": "31a00426229764a920187926ff384ccfce86efd6"
+                "reference": "956a56eb69409e88d8f556e34dc8df9eb78227cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/steffjenl/Bus/zipball/31a00426229764a920187926ff384ccfce86efd6",
-                "reference": "31a00426229764a920187926ff384ccfce86efd6",
+                "url": "https://api.github.com/repos/steffjenl/Bus/zipball/956a56eb69409e88d8f556e34dc8df9eb78227cf",
+                "reference": "956a56eb69409e88d8f556e34dc8df9eb78227cf",
                 "shasum": ""
             },
             "require": {
@@ -5161,6 +5161,10 @@
                 {
                     "name": "Alt Three",
                     "email": "support@alt-three.com"
+                },
+                {
+                    "name": "MonkeySoft",
+                    "email": "hallo@monkeysoft.nl"
                 }
             ],
             "description": "An improved command bus for Laravel",
@@ -5175,7 +5179,7 @@
             "support": {
                 "source": "https://github.com/steffjenl/Bus/tree/4.5"
             },
-            "time": "2023-08-02T20:03:04+00:00"
+            "time": "2023-08-02T20:27:45+00:00"
         },
         {
             "name": "steffjenl/emoji",
@@ -5333,12 +5337,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/steffjenl/Validator.git",
-                "reference": "63c9077e115b6cb88e43170a02c6f737079bc99b"
+                "reference": "594c145e89e234c94234a985f96670c9360fc89c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/steffjenl/Validator/zipball/63c9077e115b6cb88e43170a02c6f737079bc99b",
-                "reference": "63c9077e115b6cb88e43170a02c6f737079bc99b",
+                "url": "https://api.github.com/repos/steffjenl/Validator/zipball/594c145e89e234c94234a985f96670c9360fc89c",
+                "reference": "594c145e89e234c94234a985f96670c9360fc89c",
                 "shasum": ""
             },
             "require": {
@@ -5370,6 +5374,10 @@
                 {
                     "name": "Alt Three",
                     "email": "support@alt-three.com"
+                },
+                {
+                    "name": "MonkeySoft",
+                    "email": "hallo@monkeysoft.nl"
                 }
             ],
             "description": "A validation wrapper for Laravel",
@@ -5382,7 +5390,7 @@
             "support": {
                 "source": "https://github.com/steffjenl/Validator/tree/4.5"
             },
-            "time": "2023-08-02T20:07:37+00:00"
+            "time": "2023-08-02T20:27:33+00:00"
         },
         {
             "name": "symfony/console",
@@ -8454,24 +8462,25 @@
         },
         {
             "name": "graham-campbell/testbench-core",
-            "version": "v3.4.1",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Laravel-TestBench-Core.git",
-                "reference": "f62a3d0200cbea9f8156ac2cd7d16684ad324c8d"
+                "reference": "421fd2bedc07c7bb1e57fc01ce8d4e0e6e10378d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-TestBench-Core/zipball/f62a3d0200cbea9f8156ac2cd7d16684ad324c8d",
-                "reference": "f62a3d0200cbea9f8156ac2cd7d16684ad324c8d",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-TestBench-Core/zipball/421fd2bedc07c7bb1e57fc01ce8d4e0e6e10378d",
+                "reference": "421fd2bedc07c7bb1e57fc01ce8d4e0e6e10378d",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0 || ^8.0"
+                "php": "^7.4.15 || ^8.0.2",
+                "symfony/polyfill-php80": "^1.26"
             },
             "require-dev": {
-                "graham-campbell/analyzer": "^2.4 || ^3.0",
-                "phpunit/phpunit": "^6.5 || ^7.5 || ^8.0 || ^9.0 || ^10.0"
+                "graham-campbell/analyzer": "^4.0",
+                "phpunit/phpunit": "^9.5 || ^10.0"
             },
             "suggest": {
                 "illuminate/support": "Required to use the laravel trait.",
@@ -8509,7 +8518,7 @@
             ],
             "support": {
                 "issues": "https://github.com/GrahamCampbell/Laravel-TestBench-Core/issues",
-                "source": "https://github.com/GrahamCampbell/Laravel-TestBench-Core/tree/v3.4.1"
+                "source": "https://github.com/GrahamCampbell/Laravel-TestBench-Core/tree/v4.0.0"
             },
             "funding": [
                 {
@@ -8521,7 +8530,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-25T15:19:33+00:00"
+            "time": "2023-02-25T20:13:18+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -9292,16 +9301,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.23.0",
+            "version": "1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "a2b24135c35852b348894320d47b3902a94bc494"
+                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/a2b24135c35852b348894320d47b3902a94bc494",
-                "reference": "a2b24135c35852b348894320d47b3902a94bc494",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/846ae76eef31c6d7790fac9bc399ecee45160b26",
+                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26",
                 "shasum": ""
             },
             "require": {
@@ -9333,9 +9342,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.23.0"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.23.1"
             },
-            "time": "2023-07-23T22:17:56+00:00"
+            "time": "2023-08-03T16:32:59+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -10982,20 +10991,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/steffjenl/TestBench.git",
-                "reference": "74f327e3575e2f10a5ba28d2d278ebe647228900"
+                "reference": "beb81093cb158cd3e96d79fbc0378c8c78a6add1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/steffjenl/TestBench/zipball/74f327e3575e2f10a5ba28d2d278ebe647228900",
-                "reference": "74f327e3575e2f10a5ba28d2d278ebe647228900",
+                "url": "https://api.github.com/repos/steffjenl/TestBench/zipball/beb81093cb158cd3e96d79fbc0378c8c78a6add1",
+                "reference": "beb81093cb158cd3e96d79fbc0378c8c78a6add1",
                 "shasum": ""
             },
             "require": {
-                "graham-campbell/testbench-core": "^3.2",
-                "php": "^7.0 || ^8.0 || ^8.1"
+                "graham-campbell/testbench-core": "^4.0",
+                "php": "^7.1 || ^8.0 || ^8.1"
             },
             "require-dev": {
-                "graham-campbell/analyzer": "^2.4 || ^3.0",
+                "graham-campbell/analyzer": "^2.4 || ^3.0 || ^4.0 || ^5.0 || ^6.0",
                 "phpunit/phpunit": "^6.5 || ^7.5 || ^8.4 || ^9.0 || ^10.0"
             },
             "suggest": {
@@ -11020,6 +11029,10 @@
                 {
                     "name": "Alt Three",
                     "email": "support@alt-three.com"
+                },
+                {
+                    "name": "Stephan Eizinga",
+                    "email": "stephan@monkeysoft.nl"
                 }
             ],
             "description": "Provides some testing traits for apps",
@@ -11032,7 +11045,7 @@
             "support": {
                 "source": "https://github.com/steffjenl/TestBench/tree/4.3"
             },
-            "time": "2023-08-02T20:39:54+00:00"
+            "time": "2023-08-03T22:23:41+00:00"
         },
         {
             "name": "symfony/yaml",

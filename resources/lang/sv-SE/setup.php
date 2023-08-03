@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -11,13 +11,13 @@
 
 return [
     'setup'             => 'Installation',
-    'title'             => 'Installera Cachet',
+    'title'             => 'Installera Okazanta',
     'service_details'   => 'Servicedetaljer',
     'env_setup'         => 'Miljöinställningar',
     'status_page_setup' => 'Inställningar för statussida',
-    'show_support'      => 'Visa ditt stöd för Cachet?',
+    'show_support'      => 'Visa ditt stöd för Okazanta?',
     'admin_account'     => 'Administrationskonto',
     'complete_setup'    => 'Färdigställ installationen',
-    'completed'         => 'Cachet är färdigkonfigurerat!',
+    'completed'         => 'Okazanta är färdigkonfigurerat!',
     'finish_setup'      => 'Gå till intrumentpanelen',
 ];

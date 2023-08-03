@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -181,7 +181,7 @@ return [
             'allowed-domains'           => 'Tilladte domæner',
             'allowed-domains-help'      => 'Komma adskilt. Domænet ovenfor har automatisk adgang.',
             'always-authenticate'       => 'Always authenticate',
-            'always-authenticate-help'  => 'Require login to view any Cachet page',
+            'always-authenticate-help'  => 'Require login to view any Okazanta page',
         ],
         'stylesheet' => [
             'custom-css' => 'Tilpasset CSS',

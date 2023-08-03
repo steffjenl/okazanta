@@ -11,7 +11,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <h4>Cachet</h4>
+                <h4>Okazanta</h4>
 
                 <p>{!! trans('dashboard.settings.credits.license') !!}</p>
 

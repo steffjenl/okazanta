@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -181,7 +181,7 @@ return [
             'allowed-domains'           => '允许的 CORS 域',
             'allowed-domains-help'      => '以逗号分隔。默认情况下，API跨域请求将自动允许以上已设置的域。',
             'always-authenticate'       => '始终验证',
-            'always-authenticate-help'  => '需要登录才能查看 Cachet 页面',
+            'always-authenticate-help'  => '需要登录才能查看 Okazanta 页面',
         ],
         'stylesheet' => [
             'custom-css' => '自定义 CSS 样式表',
@@ -209,7 +209,7 @@ return [
         'email'          => '电子邮箱',
         'password'       => '密码',
         'api-token'      => 'API 令牌',
-        'api-token-help' => '重新生成您的 API Token将阻止现有的应用程序访问Cachet。',
+        'api-token-help' => '重新生成您的 API Token将阻止现有的应用程序访问Okazanta。',
         'gravatar'       => '修改您的 Gravatar 头像。',
         'user_level'     => '用户等级',
         'levels'         => [

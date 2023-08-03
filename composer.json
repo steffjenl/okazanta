@@ -1,10 +1,9 @@
 {
-  "name": "cachethq/cachet",
+  "name": "okazanta/okazanta",
   "description": "An open source status page system, for everyone.",
   "keywords": [
     "laravel",
-    "cachet",
-    "alt-three",
+    "okazanta",
     "status",
     "page"
   ],
@@ -22,6 +21,10 @@
     {
       "name": "Joseph Cohen",
       "email": "joe@alt-three.com"
+    },
+    {
+      "name": "Stephan Eizinga",
+      "email": "stephan@monkeysoft.nl"
     }
   ],
   "replace": {
@@ -130,6 +133,10 @@
   "repositories": [
     {
       "type": "vcs",
+      "url": "https://github.com/steffjenl/TestBench.git"
+    },
+    {
+      "type": "vcs",
       "url": "https://github.com/steffjenl/Twitter.git"
     },
     {
@@ -139,10 +146,6 @@
     {
       "type": "vcs",
       "url": "https://github.com/steffjenl/Badger.git"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/steffjenl/TestBench.git"
     },
     {
       "type": "vcs",

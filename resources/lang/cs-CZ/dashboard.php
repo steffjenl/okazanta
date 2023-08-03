@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -12,7 +12,7 @@
 return [
 
     'dashboard'          => 'Řídicí panel',
-    'writeable_settings' => 'Nelze zapisovat do složky nastavení Cachet. Ujistěte se, že web server může zapisovat do <code>./bootstrap/cachet</code>.',
+    'writeable_settings' => 'Nelze zapisovat do složky nastavení Okazanta. Ujistěte se, že web server může zapisovat do <code>./bootstrap/Okazanta</code>.',
 
     // Incidents
     'incidents' => [
@@ -230,8 +230,8 @@ return [
             'mail'  => 'E-Mail',
             'test'  => 'Vyzkoušet',
             'email' => [
-                'subject' => 'Testovací oznámení z Cachet',
-                'body'    => 'Toto je testovací oznámení z Cachet.',
+                'subject' => 'Testovací oznámení z Okazanta',
+                'body'    => 'Toto je testovací oznámení z Okazanta.',
             ],
         ],
         'security' => [
@@ -251,9 +251,9 @@ return [
         'credits' => [
             'credits'       => 'Autoři',
             'contributors'  => 'Přispěvatelé',
-            'license'       => 'Cachet je open-sourcový projekt pod BSD-3-licencí, vydávaný <a href="https://alt-three.com/?utm_source=cachet&utm_medium=credits&utm_campaign=Cachet%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
+            'license'       => 'Okazanta je open-sourcový projekt pod BSD-3-licencí, vydávaný <a href="https://alt-three.com/?utm_source=Okazanta&utm_medium=credits&utm_campaign=Okazanta%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
             'backers-title' => 'Podporovatelé a sponzoři',
-            'backers'       => 'Pokud chcete podpořit další vývoj aplikace, běžte se podívat na kampaň <a href="https://patreon.com/jbrooksuk" target="_blank">Cachet Patreon</a>.',
+            'backers'       => 'Pokud chcete podpořit další vývoj aplikace, běžte se podívat na kampaň <a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">Okazanta PayPal</a>.',
             'thank-you'     => 'Děkujeme každému z :count přispěvatelů.',
         ],
     ],
@@ -280,8 +280,8 @@ return [
 
     // Widgets
     'widgets' => [
-        'support'          => 'Podpořit Cachet',
-        'support_subtitle' => 'Mrkněte na náš <strong><a href="https://patreon.com/jbrooksuk" target="_blank">Patreon</a></strong> page!',
+        'support'          => 'Podpořit Okazanta',
+        'support_subtitle' => 'Mrkněte na náš <strong><a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">PayPal</a></strong> page!',
         'news'             => 'Poslední novinky',
         'news_subtitle'    => 'Získat nejnovější aktualizace',
     ],

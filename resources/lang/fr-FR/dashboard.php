@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -12,7 +12,7 @@
 return [
 
     'dashboard'          => 'Tableau de bord',
-    'writeable_settings' => 'Le dossier des paramètres de Cachet n\'est pas accessible en écriture. Veuillez vous assurer que le serveur web peut écrire dans <code>./bootstrap/cachet</code>.',
+    'writeable_settings' => 'Le dossier des paramètres de Okazanta n\'est pas accessible en écriture. Veuillez vous assurer que le serveur web peut écrire dans <code>./bootstrap/Okazanta</code>.',
 
     // Incidents
     'incidents' => [
@@ -230,8 +230,8 @@ return [
             'mail'  => 'Courriel',
             'test'  => 'Test',
             'email' => [
-                'subject' => 'Tester la notification depuis Cachet',
-                'body'    => 'Ceci est une notification de test depuis Cachet.',
+                'subject' => 'Tester la notification depuis Okazanta',
+                'body'    => 'Ceci est une notification de test depuis Okazanta.',
             ],
         ],
         'security' => [
@@ -251,9 +251,9 @@ return [
         'credits' => [
             'credits'       => 'Crédits',
             'contributors'  => 'Contributeurs',
-            'license'       => 'Cachet est un logiciel libre sous licence BSD-3 édité par <a href="https://alt-three.com/?utm_source=cachet&utm_medium=credits&utm_campaign=Cachet%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
+            'license'       => 'Okazanta est un logiciel libre sous licence BSD-3 édité par <a href="https://alt-three.com/?utm_source=Okazanta&utm_medium=credits&utm_campaign=Okazanta%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
             'backers-title' => 'Partenaires financiers et sponsors',
-            'backers'       => 'Si vous souhaitez aider des développements futurs jetez un œil à la campagne <a href="https://patreon.com/jbrooksuk" target="_blank">Cachet Patreon</a>.',
+            'backers'       => 'Si vous souhaitez aider des développements futurs jetez un œil à la campagne <a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">Okazanta PayPal</a>.',
             'thank-you'     => 'Merci à chacun des :count contributeurs.',
         ],
     ],
@@ -280,8 +280,8 @@ return [
 
     // Widgets
     'widgets' => [
-        'support'          => 'Supportez Cachet',
-        'support_subtitle' => 'Jetez un œil à la page <strong><a href="https://patreon.com/jbrooksuk" target="_blank">Patreon</a></strong>!',
+        'support'          => 'Supportez Okazanta',
+        'support_subtitle' => 'Jetez un œil à la page <strong><a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">PayPal</a></strong>!',
         'news'             => 'Dernières actualités',
         'news_subtitle'    => 'Obtenez les dernières mises à jour',
     ],

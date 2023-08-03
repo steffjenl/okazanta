@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -209,7 +209,7 @@ return [
         'email'          => 'Email',
         'password'       => 'Senha',
         'api-token'      => 'Token da API',
-        'api-token-help' => 'Regenerar a chave da API impedirá que aplicativos existentes acessem o Cachet.',
+        'api-token-help' => 'Regenerar a chave da API impedirá que aplicativos existentes acessem o Okazanta.',
         'gravatar'       => 'Altere a foto de perfil no Gravatar.',
         'user_level'     => 'Nível do Utilizador',
         'levels'         => [

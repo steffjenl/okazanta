@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -11,13 +11,13 @@
 
 return [
     'setup'             => 'Instalacja',
-    'title'             => 'Skonfiguruj Cachet',
+    'title'             => 'Skonfiguruj Okazanta',
     'service_details'   => 'Szczegóły usługi',
     'env_setup'         => 'Konfiguracja środowiska',
     'status_page_setup' => 'Skonfiguruj stronę statusu',
-    'show_support'      => 'Pokazać wsparcie dla Cachet?',
+    'show_support'      => 'Pokazać wsparcie dla Okazanta?',
     'admin_account'     => 'Konto Administratora',
     'complete_setup'    => 'Zakończ instalację',
-    'completed'         => 'Cachet został pomyślnie skonfigurowany!',
+    'completed'         => 'Okazanta został pomyślnie skonfigurowany!',
     'finish_setup'      => 'Przejdź do pulpitu',
 ];
