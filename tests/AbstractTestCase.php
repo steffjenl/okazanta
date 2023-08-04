@@ -84,4 +84,12 @@ abstract class AbstractTestCase extends TestCase
 
         return $this;
     }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        config(['app.url' => 'http://localhost']);
+        \URL::forceRootUrl('http://localhost');
+    }
 }
