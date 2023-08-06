@@ -16,6 +16,7 @@ use CachetHQ\Cachet\Bus\Commands\Metric\CreateMetricPointCommand;
 use CachetHQ\Cachet\Bus\Handlers\Commands\Metric\CreateMetricPointCommandHandler;
 use CachetHQ\Cachet\Models\Metric;
 use Tests\TestCase as AbstractTestCase;
+use Tests\Traits\CommandTrait;
 
 /**
  * This is the create metric point command test class.
@@ -25,7 +26,7 @@ use Tests\TestCase as AbstractTestCase;
  */
 class CreateMetricPointCommandTest extends AbstractTestCase
 {
-
+    use CommandTrait;
     protected function getObjectAndParams()
     {
         $params = ['metric' => new Metric(), 'value' => 1, 'created_at' => '2020-12-30 12:00:00'];

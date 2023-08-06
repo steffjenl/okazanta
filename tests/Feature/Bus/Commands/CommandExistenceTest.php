@@ -24,8 +24,8 @@ class CommandExistenceTest extends TestCase
 {
     use ExistenceTrait;
 
-    protected function getSourcePath()
+    protected static function getSourcePath()
     {
-        return realpath(__DIR__.'/../../../app/Bus/Commands');
+        return realpath(__DIR__.'/../../../../app/Bus/Commands');
     }
 }

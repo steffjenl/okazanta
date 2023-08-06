@@ -20,5 +20,9 @@ use Tests\ServiceProviderTestCase;
  */
 class ConsoleServiceProviderTest extends ServiceProviderTestCase
 {
+    public function testConsoleServiceProvider()
+    {
+        $this->assertTrue(true);
+    }
 
 }

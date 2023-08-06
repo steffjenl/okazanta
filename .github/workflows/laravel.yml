@@ -22,8 +22,10 @@ jobs:
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
     - name: Generate key
       run: php artisan key:generate
-    - name: Directory Permissions
+    - name: Directory Permissions Bootstrap
       run: chmod -R 777 storage bootstrap/cache
+    - name: Directory Permissions Storage
+      run: chmod -R 777 storage storage
     - name: Create Database
       run: |
         mkdir -p database

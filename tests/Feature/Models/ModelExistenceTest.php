@@ -24,8 +24,8 @@ class ModelExistenceTest extends TestCase
 {
     use ExistenceTrait;
 
-    protected function getSourcePath()
+    protected static function getSourcePath()
     {
-        return realpath(__DIR__.'/../../app/Models');
+        return realpath(__DIR__.'/../../../app/Models');
     }
 }

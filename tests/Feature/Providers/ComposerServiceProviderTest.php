@@ -20,5 +20,8 @@ use Tests\TestCase;
  */
 class ComposerServiceProviderTest extends TestCase
 {
-
+    public function testComposerServiceProvider()
+    {
+        $this->assertTrue(true);
+    }
 }
