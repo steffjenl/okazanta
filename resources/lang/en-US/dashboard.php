@@ -256,6 +256,11 @@ return [
             'backers'       => 'If you\'d like to support future development, check out the <a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">Okazanta PayPal</a> campaign.',
             'thank-you'     => 'Thank you to each and every one of the :count contributors.',
         ],
+        'widget' => [
+            'widget'        => 'Widget',
+            'example'       => 'HTML Example code',
+            'information'   => 'This widget can be embedded on any page, by copying the following HTML code your website. It\'s using bootstrap alert for formatting and class statusMessage for custom colors.<br /><br /><a href="/widget.demo.html" target="_blank">Click here for a demo</a>',
+        ],
     ],
 
     // Login

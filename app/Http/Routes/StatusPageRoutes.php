@@ -63,6 +63,17 @@ class StatusPageRoutes
                 'as'   => 'get:component_shield',
                 'uses' => 'StatusPageController@showComponentBadge',
             ]);
+
+            $router->get('/widget.js', [
+                'as'   => 'get:widget',
+                'uses' => 'StatusPageController@showWidget',
+            ]);
+
+            $router->get('/widget.demo.html', [
+                'as'   => 'get:widgetDemo',
+                'uses' => 'StatusPageController@showWidgetDemo',
+                'middleware' => 'auth',
+            ]);
         });
     }
 }

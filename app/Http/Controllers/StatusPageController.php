@@ -13,6 +13,7 @@ namespace CachetHQ\Cachet\Http\Controllers;
 
 use CachetHQ\Badger\Facades\Badger;
 use CachetHQ\Cachet\Http\Controllers\Api\AbstractApiController;
+use CachetHQ\Cachet\Integrations\Contracts\System;
 use CachetHQ\Cachet\Models\Component;
 use CachetHQ\Cachet\Models\Incident;
 use CachetHQ\Cachet\Models\Metric;
@@ -208,5 +209,20 @@ class StatusPageController extends AbstractApiController
         );
 
         return Response::make($badge, 200, ['Content-Type' => 'image/svg+xml']);
+    }
+
+    public function showWidget()
+    {
+        $system = app()->make(System::class)->getStatus();
+
+        return View::make('widget', [
+            'status' => $system['system_status'],
+            'message' => $system['system_message']
+        ]);
+    }
+
+    public function showWidgetDemo()
+    {
+        return View::make('widget-demo')->withConfig(Config::get('app'));
     }
 }
