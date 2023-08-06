@@ -107,6 +107,12 @@ class SettingsController extends Controller
                 'icon'   => 'ion-paper-airplane',
                 'active' => false,
             ],
+            'widget' => [
+                'title'  => trans('dashboard.settings.widget.widget'),
+                'url'    => cachet_route('dashboard.settings.widget'),
+                'icon'   => 'ion-ios-list',
+                'active' => false,
+            ],
             'about' => [
                 'title'  => CACHET_VERSION,
                 'url'    => 'javascript: void(0);',
@@ -445,5 +451,11 @@ class SettingsController extends Controller
 
         // Store the banner type.
         $setting->set('app_banner_type', $file->getMimeType());
+    }
+
+    public function showWidget()
+    {
+        $exampleCode = View::make('widget-demo')->withConfig(Config::get('app'))->render();
+        return View::make('dashboard.settings.widget',['exampleCode' => $exampleCode])->withConfig(Config::get('app'));
     }
 }

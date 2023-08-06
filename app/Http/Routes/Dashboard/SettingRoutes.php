@@ -82,6 +82,10 @@ class SettingRoutes
                 'as'   => 'get:dashboard.settings.mail',
                 'uses' => 'SettingsController@showMailView',
             ]);
+            $router->get('widget', [
+                'as'   => 'get:dashboard.settings.widget',
+                'uses' => 'SettingsController@showWidget',
+            ]);
             $router->post('mail', [
                 'as'   => 'post:dashboard.settings.mail',
                 'uses' => 'SettingsController@postMail',

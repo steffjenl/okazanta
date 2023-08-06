@@ -143,9 +143,9 @@ return [
         'db' => [
             'with_params'       => true,   // Render SQL with the parameters substituted
             'backtrace'         => true,   // Use a backtrace to find the origin of the query in your files.
-            'timeline'          => false,  // Add the queries to the timeline
+            'timeline'          => true,  // Add the queries to the timeline
             'explain'           => [                 // Show EXPLAIN output on queries
-                'enabled' => false,
+                'enabled' => true,
                 'types'   => ['SELECT'],     // ['SELECT', 'INSERT', 'UPDATE', 'DELETE']; for MySQL 5.6.3+
             ],
             'hints'             => true,    // Show hints for common mistakes
@@ -198,4 +198,6 @@ return [
      | To override default domain, specify it as a non-empty value.
      */
     'route_domain' => null,
+
+    'except' => [ 'widget.js' ],
 ];
