@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -181,7 +181,7 @@ return [
             'allowed-domains'           => 'Povolené domény',
             'allowed-domains-help'      => 'Oddělené čárkami. Výše uvedené domény jsou ve výchozím nastavení automaticky povoleny.',
             'always-authenticate'       => 'Vždy ověřovat',
-            'always-authenticate-help'  => 'Požadovat přihlášení k zobrazení jakékoli Cachet stránky',
+            'always-authenticate-help'  => 'Požadovat přihlášení k zobrazení jakékoli Okazanta stránky',
         ],
         'stylesheet' => [
             'custom-css' => 'Vlastní šablona stylů',
@@ -209,7 +209,7 @@ return [
         'email'          => 'E-mail',
         'password'       => 'Heslo',
         'api-token'      => 'API Token',
-        'api-token-help' => 'Přegenerování vašeho API tokenu zabrání současným aplikacím přistupovat ke Cachet.',
+        'api-token-help' => 'Přegenerování vašeho API tokenu zabrání současným aplikacím přistupovat ke Okazanta.',
         'gravatar'       => 'Profilový obrázek si změn na Gravatar.',
         'user_level'     => 'Úroveň uživatele',
         'levels'         => [

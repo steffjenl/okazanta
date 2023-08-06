@@ -54,7 +54,7 @@ class MetricPointController extends AbstractApiController
                 Binput::get('timestamp')
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($metricPoint);

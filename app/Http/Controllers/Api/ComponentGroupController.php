@@ -99,7 +99,7 @@ class ComponentGroupController extends AbstractApiController
                 Binput::get('visible', ComponentGroup::VISIBLE_AUTHENTICATED)
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($group);
@@ -123,7 +123,7 @@ class ComponentGroupController extends AbstractApiController
                 Binput::get('visible')
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($group);

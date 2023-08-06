@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -11,13 +11,13 @@
 
 return [
     'setup'             => 'Installation',
-    'title'             => 'Configuration de Cachet',
+    'title'             => 'Configuration de Okazanta',
     'service_details'   => 'Détails du service',
     'env_setup'         => 'Configuration de l\'environnement',
     'status_page_setup' => 'Configuration de la page de statut',
-    'show_support'      => 'Afficher votre soutien à Cachet ?',
+    'show_support'      => 'Afficher votre soutien à Okazanta ?',
     'admin_account'     => 'Compte administrateur',
     'complete_setup'    => 'Terminer la configuration',
-    'completed'         => 'Cachet a été configuré avec succès !',
+    'completed'         => 'Okazanta a été configuré avec succès !',
     'finish_setup'      => 'Aller au tableau de bord',
 ];

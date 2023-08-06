@@ -27,6 +27,7 @@ use Illuminate\Auth\Middleware\Authorize;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode;
 use Illuminate\Routing\Middleware\ValidateSignature;
+use Illuminate\Http\Middleware\HandleCors;
 
 class Kernel extends HttpKernel
 {
@@ -38,7 +39,7 @@ class Kernel extends HttpKernel
     protected $middleware = [
         TrustProxies::class,
         CheckForMaintenanceMode::class,
-        \Fruitcake\Cors\HandleCors::class,
+        HandleCors::class,
     ];
 
     /**
@@ -53,7 +54,7 @@ class Kernel extends HttpKernel
         'auth'            => Authenticate::class,
         'cache'           => CacheControl::class,
         'can'             => Authorize::class,
-        'cors'            => \Fruitcake\Cors\HandleCors::class,
+        'cors'            => HandleCors::class,
         'guest'           => RedirectIfAuthenticated::class,
         'localize'        => Localize::class,
         'ready'           => ReadyForUse::class,

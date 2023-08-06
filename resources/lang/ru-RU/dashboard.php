@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -12,7 +12,7 @@
 return [
 
     'dashboard'          => 'Панель управления',
-    'writeable_settings' => 'The Cachet settings directory is not writeable. Please make sure that <code>./bootstrap/cachet</code> is writeable by the web server.',
+    'writeable_settings' => 'The Okazanta settings directory is not writeable. Please make sure that <code>./bootstrap/Okazanta</code> is writeable by the web server.',
 
     // Incidents
     'incidents' => [
@@ -230,8 +230,8 @@ return [
             'mail'  => 'Mail',
             'test'  => 'Test',
             'email' => [
-                'subject' => 'Test notification from Cachet',
-                'body'    => 'This is a test notification from Cachet.',
+                'subject' => 'Test notification from Okazanta',
+                'body'    => 'This is a test notification from Okazanta.',
             ],
         ],
         'security' => [
@@ -251,9 +251,9 @@ return [
         'credits' => [
             'credits'       => 'Разработчики',
             'contributors'  => 'Контрибьюторы',
-            'license'       => 'Cachet - это проект с открытым исходным кодом по лицензии BSD-3, разрабатываемый компанией <a href="https://alt-three.com/?utm_source=cachet&utm_medium=credits&utm_campaign=Cachet%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
+            'license'       => 'Okazanta - это проект с открытым исходным кодом по лицензии BSD-3, разрабатываемый компанией <a href="https://alt-three.com/?utm_source=Okazanta&utm_medium=credits&utm_campaign=Okazanta%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
             'backers-title' => 'Партнеры и спонсоры',
-            'backers'       => 'Если вы хотите поддержать будущую разработку, присоединяйтесь к сбору средств в <a href="https://patreon.com/jbrooksuk" target="_blank">Cachet Patreon</a>.',
+            'backers'       => 'Если вы хотите поддержать будущую разработку, присоединяйтесь к сбору средств в <a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">Okazanta PayPal</a>.',
             'thank-you'     => 'Спасибо всем нашим :count контрибьюторам.',
         ],
     ],
@@ -280,8 +280,8 @@ return [
 
     // Widgets
     'widgets' => [
-        'support'          => 'Поддержать Cachet',
-        'support_subtitle' => 'Посетите нашу страницу на <strong><a href="https://patreon.com/jbrooksuk" target="_blank">Patreon</a></strong>!',
+        'support'          => 'Поддержать Okazanta',
+        'support_subtitle' => 'Посетите нашу страницу на <strong><a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">PayPal</a></strong>!',
         'news'             => 'Последние новости',
         'news_subtitle'    => 'Проверить обновления',
     ],

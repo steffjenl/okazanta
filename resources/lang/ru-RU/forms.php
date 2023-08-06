@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -181,7 +181,7 @@ return [
             'allowed-domains'           => 'Разрешённые домены',
             'allowed-domains-help'      => 'Разделяйте запятыми. Домен, установленный в настройках, разрешен по умолчанию.',
             'always-authenticate'       => 'Always authenticate',
-            'always-authenticate-help'  => 'Require login to view any Cachet page',
+            'always-authenticate-help'  => 'Require login to view any Okazanta page',
         ],
         'stylesheet' => [
             'custom-css' => 'Код пользовательских стилей (CSS)',
@@ -209,7 +209,7 @@ return [
         'email'          => 'Email',
         'password'       => 'Пароль',
         'api-token'      => 'API токен',
-        'api-token-help' => 'Обновление вашего API токена заблокирует существующим приложениям доступ в Cachet. Вам будет необходимо прописать в них новый токен.',
+        'api-token-help' => 'Обновление вашего API токена заблокирует существующим приложениям доступ в Okazanta. Вам будет необходимо прописать в них новый токен.',
         'gravatar'       => 'Изменить своё изображение на Gravatar.',
         'user_level'     => 'Тип пользователя',
         'levels'         => [

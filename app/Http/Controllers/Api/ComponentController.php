@@ -85,7 +85,7 @@ class ComponentController extends AbstractApiController
                 Binput::get('tags')
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($component);
@@ -115,7 +115,7 @@ class ComponentController extends AbstractApiController
                 (bool) Binput::get('silent', false)
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($component);

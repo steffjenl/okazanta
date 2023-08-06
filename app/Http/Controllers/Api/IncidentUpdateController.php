@@ -83,7 +83,7 @@ class IncidentUpdateController extends AbstractApiController
                 Auth::user()
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($update);
@@ -107,7 +107,7 @@ class IncidentUpdateController extends AbstractApiController
                 Auth::user()
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($update);
@@ -126,7 +126,7 @@ class IncidentUpdateController extends AbstractApiController
         try {
             execute(new RemoveIncidentUpdateCommand($update));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->noContent();

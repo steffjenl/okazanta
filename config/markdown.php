@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 /*
- * This file is part of Cachet.
+ * This file is part of Laravel Markdown.
  *
- * (c) Alt Three Services Limited
+ * (c) Graham Campbell <hello@gjcampbell.co.uk>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -29,20 +31,23 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | CommonMark Extenstions
+    | CommonMark Extensions
     |--------------------------------------------------------------------------
     |
     | This option specifies what extensions will be automatically enabled.
     | Simply provide your extension class names here.
     |
-    | Default: []
+    | Default: [
+    |              League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension::class,
+    |              League\CommonMark\Extension\Table\TableExtension::class,
+    |          ]
     |
     */
 
-    'extensions' => array_filter([
-        env('CACHET_EMOJI', false) ? 'CachetHQ\Emoji\EmojiExtension' : null,
-        env('CACHET_AUTO_TWITTER', true) ? 'CachetHQ\Twitter\TwitterExtension' : null,
-    ]),
+    'extensions' => [
+        League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension::class,
+        League\CommonMark\Extension\Table\TableExtension::class,
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -62,60 +67,33 @@ return [
     'renderer' => [
         'block_separator' => "\n",
         'inner_separator' => "\n",
-        'soft_break'      => "\n\n",
+        'soft_break'      => "\n",
     ],
 
     /*
     |--------------------------------------------------------------------------
-    | Enable Em Tag Parsing
+    | Commonmark Configuration
     |--------------------------------------------------------------------------
     |
-    | This option specifies if `<em>` parsing is enabled.
+    | This option specifies an array of options for commonmark.
     |
-    | Default: true
+    | Default: [
+    |              'enable_em' => true,
+    |              'enable_strong' => true,
+    |              'use_asterisk' => true,
+    |              'use_underscore' => true,
+    |              'unordered_list_markers' => ['-', '+', '*'],
+    |          ]
     |
     */
 
-    'enable_em' => true,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Enable Strong Tag Parsing
-    |--------------------------------------------------------------------------
-    |
-    | This option specifies if `<strong>` parsing is enabled.
-    |
-    | Default: true
-    |
-    */
-
-    'enable_strong' => true,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Enable Asterisk Parsing
-    |--------------------------------------------------------------------------
-    |
-    | This option specifies if `*` should be parsed for emphasis.
-    |
-    | Default: true
-    |
-    */
-
-    'use_asterisk' => true,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Enable Underscore Parsing
-    |--------------------------------------------------------------------------
-    |
-    | This option specifies if `_` should be parsed for emphasis.
-    |
-    | Default: true
-    |
-    */
-
-    'use_underscore' => true,
+    'commonmark' => [
+        'enable_em'              => true,
+        'enable_strong'          => true,
+        'use_asterisk'           => true,
+        'use_underscore'         => true,
+        'unordered_list_markers' => ['-', '+', '*'],
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -150,10 +128,29 @@ return [
     |
     | This option specifies the maximum permitted block nesting level.
     |
-    | Default: INF
+    | Default: PHP_INT_MAX
     |
     */
 
-    'max_nesting_level' => INF,
+    'max_nesting_level' => PHP_INT_MAX,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Slug Normalizer
+    |--------------------------------------------------------------------------
+    |
+    | This option specifies an array of options for slug normalization.
+    |
+    | Default: [
+    |              'max_length' => 255,
+    |              'unique' => 'document',
+    |          ]
+    |
+    */
+
+    'slug_normalizer' => [
+        'max_length' => 255,
+        'unique'     => 'document',
+    ],
 
 ];

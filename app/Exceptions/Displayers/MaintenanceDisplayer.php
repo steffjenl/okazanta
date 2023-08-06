@@ -14,8 +14,8 @@ namespace CachetHQ\Cachet\Exceptions\Displayers;
 use Throwable;
 use GrahamCampbell\Exceptions\Displayer\DisplayerInterface;
 use Illuminate\Contracts\View\Factory;
-use Illuminate\Foundation\Http\Exceptions\MaintenanceModeException;
 use Illuminate\Http\Response;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 /**
  * This is the maintenance displayer class.
@@ -53,7 +53,7 @@ class MaintenanceDisplayer implements DisplayerInterface
      *
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function display(Throwable $exception, string $id, int $code, array $headers)
+    public function display(Throwable $exception, string $id, int $code, array $headers): Response
     {
         return new Response($this->render(), $code, array_merge($headers, ['Content-Type' => $this->contentType()]));
     }
@@ -73,7 +73,7 @@ class MaintenanceDisplayer implements DisplayerInterface
      *
      * @return string
      */
-    public function contentType()
+    public function contentType(): string
     {
         return 'text/html';
     }
@@ -87,9 +87,10 @@ class MaintenanceDisplayer implements DisplayerInterface
      *
      * @return bool
      */
-    public function canDisplay(Throwable $original, Throwable $transformed, int $code)
+    public function canDisplay(Throwable $original, Throwable $transformed, int $code): bool
     {
-        return $transformed instanceof MaintenanceModeException;
+        //return false;
+        return ($transformed instanceof HttpException) && $transformed->getStatusCode() === 503;
     }
 
     /**
@@ -97,7 +98,7 @@ class MaintenanceDisplayer implements DisplayerInterface
      *
      * @return bool
      */
-    public function isVerbose()
+    public function isVerbose(): bool
     {
         return false;
     }

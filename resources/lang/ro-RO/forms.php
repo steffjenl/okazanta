@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -181,7 +181,7 @@ return [
             'allowed-domains'           => 'Domenii permise',
             'allowed-domains-help'      => 'Separate prin virgulă. Domeniul configurat mai sus este automat permis implicit.',
             'always-authenticate'       => 'Always authenticate',
-            'always-authenticate-help'  => 'Require login to view any Cachet page',
+            'always-authenticate-help'  => 'Require login to view any Okazanta page',
         ],
         'stylesheet' => [
             'custom-css' => 'Personalizează Stilurile',
@@ -209,7 +209,7 @@ return [
         'email'          => 'Email',
         'password'       => 'Parolă',
         'api-token'      => 'Token API',
-        'api-token-help' => 'Regenerarea token-ului API va împiedica aplicaţiile existente să acceseze Cachet.',
+        'api-token-help' => 'Regenerarea token-ului API va împiedica aplicaţiile existente să acceseze Okazanta.',
         'gravatar'       => 'Schimbaţi poza de profil pe Gravatar.',
         'user_level'     => 'Nivel utilizator',
         'levels'         => [

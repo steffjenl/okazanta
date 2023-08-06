@@ -12,3 +12,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 package-lock.json
+/storage/framework/views/*.php
+/storage/framework/sessions/*
+/storage/framework/cache/*
+

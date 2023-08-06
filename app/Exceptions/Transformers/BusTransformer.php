@@ -26,11 +26,11 @@ class BusTransformer implements TransformerInterface
     /**
      * Transform the provided exception.
      *
-     * @param \Throwable $exception
+     * @param Throwable $exception
      *
-     * @return \Throwable
+     * @return Throwable
      */
-    public function transform(Throwable $exception)
+    public function transform(Throwable $exception): Throwable
     {
         if ($exception instanceof ExceptionInterface) {
             $exception = new BadRequestHttpException($exception->getMessage());

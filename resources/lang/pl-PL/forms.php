@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -181,7 +181,7 @@ return [
             'allowed-domains'           => 'Dozwolone domeny',
             'allowed-domains-help'      => 'Oddzielone przecinkami. Domena jest automatycznie ustawiona wyżej domyślnie, jako dozwolona.',
             'always-authenticate'       => 'Always authenticate',
-            'always-authenticate-help'  => 'Require login to view any Cachet page',
+            'always-authenticate-help'  => 'Require login to view any Okazanta page',
         ],
         'stylesheet' => [
             'custom-css' => 'Niestandardowy arkusz stylów',
@@ -209,7 +209,7 @@ return [
         'email'          => 'E-Mail',
         'password'       => 'Hasło',
         'api-token'      => 'Token API',
-        'api-token-help' => 'Ponowne wygenerowanie nowego tokenu API spowoduje, że aplikacje korzystające obecnie z Cachet utracą do niego dostęp.',
+        'api-token-help' => 'Ponowne wygenerowanie nowego tokenu API spowoduje, że aplikacje korzystające obecnie z Okazanta utracą do niego dostęp.',
         'gravatar'       => 'Zmień swój awatar na Gravatar.',
         'user_level'     => 'Poziom użytkownika',
         'levels'         => [

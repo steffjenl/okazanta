@@ -66,7 +66,7 @@ class JsonValidationDisplayer implements DisplayerInterface
      *
      * @return bool
      */
-    public function canDisplay(Throwable $original, Throwable $transformed, int $code)
+    public function canDisplay(Throwable $original, Throwable $transformed, int $code): bool
     {
         return $transformed instanceof ValidationException;
     }
@@ -76,7 +76,7 @@ class JsonValidationDisplayer implements DisplayerInterface
      *
      * @return string
      */
-    public function contentType()
+    public function contentType(): string
     {
         return 'application/json';
     }
@@ -86,7 +86,7 @@ class JsonValidationDisplayer implements DisplayerInterface
      *
      * @return bool
      */
-    public function isVerbose()
+    public function isVerbose(): bool
     {
         return false;
     }

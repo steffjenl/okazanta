@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -12,7 +12,7 @@
 return [
 
     'dashboard'          => 'Panou de control',
-    'writeable_settings' => 'The Cachet settings directory is not writeable. Please make sure that <code>./bootstrap/cachet</code> is writeable by the web server.',
+    'writeable_settings' => 'The Okazanta settings directory is not writeable. Please make sure that <code>./bootstrap/Okazanta</code> is writeable by the web server.',
 
     // Incidents
     'incidents' => [
@@ -230,8 +230,8 @@ return [
             'mail'  => 'Mail',
             'test'  => 'Test',
             'email' => [
-                'subject' => 'Test notification from Cachet',
-                'body'    => 'This is a test notification from Cachet.',
+                'subject' => 'Test notification from Okazanta',
+                'body'    => 'This is a test notification from Okazanta.',
             ],
         ],
         'security' => [
@@ -251,9 +251,9 @@ return [
         'credits' => [
             'credits'       => 'Autori',
             'contributors'  => 'Contribuitori',
-            'license'       => 'Cachet este un proiect open source cu licență BSD-3, realizat de <a href="https://alt-three.com/?utm_source=cachet&utm_medium=credits&utm_campaign=Cachet%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
+            'license'       => 'Okazanta este un proiect open source cu licență BSD-3, realizat de <a href="https://alt-three.com/?utm_source=Okazanta&utm_medium=credits&utm_campaign=Okazanta%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
             'backers-title' => 'Susținători & Sponsori',
-            'backers'       => 'Dacă vreți să susțineți dezvoltarea proiectului, vizitați pagina de campanie <a href="https://patreon.com/jbrooksuk" target="_blank">Cachet Patreon</a>.',
+            'backers'       => 'Dacă vreți să susțineți dezvoltarea proiectului, vizitați pagina de campanie <a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">Okazanta PayPal</a>.',
             'thank-you'     => 'Mulțumim tuturor celor :count contribuitori.',
         ],
     ],
@@ -280,8 +280,8 @@ return [
 
     // Widgets
     'widgets' => [
-        'support'          => 'Susțineți Cachet',
-        'support_subtitle' => 'Vizitați pagina noastră pe <strong><a href="https://patreon.com/jbrooksuk" target="_blank">Patreon</a></strong>!',
+        'support'          => 'Susțineți Okazanta',
+        'support_subtitle' => 'Vizitați pagina noastră pe <strong><a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">PayPal</a></strong>!',
         'news'             => 'Ultimele Știri',
         'news_subtitle'    => 'Obţineţi cea mai recentă actualizare',
     ],

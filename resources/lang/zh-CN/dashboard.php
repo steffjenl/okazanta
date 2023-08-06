@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -12,7 +12,7 @@
 return [
 
     'dashboard'          => '控制台',
-    'writeable_settings' => 'Cachet 设置目录无法写入。请确认 <code>./bootstrap/cachet</code> 文件夹可被服务器写入。',
+    'writeable_settings' => 'Okazanta 设置目录无法写入。请确认 <code>./bootstrap/Okazanta</code> 文件夹可被服务器写入。',
 
     // Incidents
     'incidents' => [
@@ -230,8 +230,8 @@ return [
             'mail'  => '邮件',
             'test'  => '测试',
             'email' => [
-                'subject' => 'Cachet 通知测试',
-                'body'    => '这是来自 Cachet 的测试通知邮件。',
+                'subject' => 'Okazanta 通知测试',
+                'body'    => '这是来自 Okazanta 的测试通知邮件。',
             ],
         ],
         'security' => [
@@ -251,9 +251,9 @@ return [
         'credits' => [
             'credits'       => '关于开发团队',
             'contributors'  => '贡献者',
-            'license'       => 'Cachet 是 <a href="https://alt-three.com/?utm_source=cachet&utm_medium=credits&utm_campaign=Cachet%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a> 开发的一个开源项目，使用 BSD-3 授权。',
+            'license'       => 'Okazanta 是 <a href="https://alt-three.com/?utm_source=Okazanta&utm_medium=credits&utm_campaign=Okazanta%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a> 开发的一个开源项目，使用 BSD-3 授权。',
             'backers-title' => '后勤力量和赞助商',
-            'backers'       => '如果您想为后续的开发提供支持，请查看 <a href="https://patreon.com/jbrooksuk" target="_blank">Cachet Patreon</a>。',
+            'backers'       => '如果您想为后续的开发提供支持，请查看 <a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">Okazanta PayPal</a>。',
             'thank-you'     => '感谢您和 :count 位贡献者们',
         ],
     ],
@@ -280,8 +280,8 @@ return [
 
     // Widgets
     'widgets' => [
-        'support'          => '支持 Cachet',
-        'support_subtitle' => '查看我们的 <strong><a href="https://patreon.com/jbrooksuk" target="_blank">Patreon</a></strong> 页面！',
+        'support'          => '支持 Okazanta',
+        'support_subtitle' => '查看我们的 <strong><a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">PayPal</a></strong> 页面！',
         'news'             => '最新消息',
         'news_subtitle'    => '获取最近的更新',
     ],

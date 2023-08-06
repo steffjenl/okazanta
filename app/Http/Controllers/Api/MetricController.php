@@ -76,7 +76,7 @@ class MetricController extends AbstractApiController
                 Binput::get('visible', 1)
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($metric);
@@ -107,7 +107,7 @@ class MetricController extends AbstractApiController
                 Binput::get('visible')
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($metric);

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -97,8 +97,8 @@ return [
     'system' => [
         'test' => [
             'mail' => [
-                'subject' => 'Ping von Cachet!',
-                'content' => 'Dies ist eine Test-Benachrichtigung von Cachet!',
+                'subject' => 'Ping von Okazanta!',
+                'content' => 'Dies ist eine Test-Benachrichtigung von Okazanta!',
                 'title'   => '🔔',
             ],
         ],

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -12,7 +12,7 @@
 return [
 
     'dashboard'          => 'Dashboard',
-    'writeable_settings' => 'The Cachet settings directory is not writeable. Please make sure that <code>./bootstrap/cachet</code> is writeable by the web server.',
+    'writeable_settings' => 'The Okazanta settings directory is not writeable. Please make sure that <code>./bootstrap/Okazanta</code> is writeable by the web server.',
 
     // Incidents
     'incidents' => [
@@ -230,8 +230,8 @@ return [
             'mail'  => 'Mail',
             'test'  => 'Test',
             'email' => [
-                'subject' => 'Test notification from Cachet',
-                'body'    => 'This is a test notification from Cachet.',
+                'subject' => 'Test notification from Okazanta',
+                'body'    => 'This is a test notification from Okazanta.',
             ],
         ],
         'security' => [
@@ -251,9 +251,9 @@ return [
         'credits' => [
             'credits'       => 'Kredit',
             'contributors'  => 'Kontributor',
-            'license'       => 'Cachet adalah proyek open source berlisensi BSD, dirilis oleh <a href="https://alt-three.com/?utm_source=cachet&utm_medium=credits&utm_campaign=Cachet%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
+            'license'       => 'Okazanta adalah proyek open source berlisensi BSD, dirilis oleh <a href="https://alt-three.com/?utm_source=Okazanta&utm_medium=credits&utm_campaign=Okazanta%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
             'backers-title' => 'Pendukung & Sponsor',
-            'backers'       => 'Jika anda ingin mendukung pengembangan selanjutnya, silakan kunjungi kampanye <a href="https://patreon.com/jbrooksuk" target="_blank">Cachet di Patreon</a>.',
+            'backers'       => 'Jika anda ingin mendukung pengembangan selanjutnya, silakan kunjungi kampanye <a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">Okazanta di PayPal</a>.',
             'thank-you'     => 'Terima kasih pada seluruh :count kontributor.',
         ],
     ],
@@ -280,8 +280,8 @@ return [
 
     // Widgets
     'widgets' => [
-        'support'          => 'Dukung Cachet',
-        'support_subtitle' => 'Lihat halaman <strong><a href="https://patreon.com/jbrooksuk" target="_blank">Patreon</a></strong> kami!',
+        'support'          => 'Dukung Okazanta',
+        'support_subtitle' => 'Lihat halaman <strong><a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">PayPal</a></strong> kami!',
         'news'             => 'Berita Terbaru',
         'news_subtitle'    => 'Dapatkan update terbaru',
     ],

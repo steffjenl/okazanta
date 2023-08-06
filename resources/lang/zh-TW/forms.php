@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Cachet.
+ * This file is part of Okazanta.
  *
  * (c) Alt Three Services Limited
  *
@@ -181,7 +181,7 @@ return [
             'allowed-domains'           => 'Allowed domains',
             'allowed-domains-help'      => '請以半角逗號分隔。以上域名將會自動允許訪問。',
             'always-authenticate'       => 'Always authenticate',
-            'always-authenticate-help'  => 'Require login to view any Cachet page',
+            'always-authenticate-help'  => 'Require login to view any Okazanta page',
         ],
         'stylesheet' => [
             'custom-css' => 'Custom Stylesheet',
@@ -209,7 +209,7 @@ return [
         'email'          => '電郵地址',
         'password'       => '密碼',
         'api-token'      => 'API 密鑰',
-        'api-token-help' => '重新生成 API 密鑰將會導致現存的應用程序無法訪問 Cachet 。',
+        'api-token-help' => '重新生成 API 密鑰將會導致現存的應用程序無法訪問 Okazanta 。',
         'gravatar'       => 'Change your profile picture at Gravatar.',
         'user_level'     => 'User Level',
         'levels'         => [
