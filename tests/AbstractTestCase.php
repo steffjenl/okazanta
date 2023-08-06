@@ -1,30 +1,24 @@
 <?php
 
-/*
- * This file is part of Cachet.
- *
- * (c) Alt Three Services Limited
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
+namespace Tests;
 
-namespace CachetHQ\Tests\Cachet;
-
+use CachetHQ\Cachet\Models\Subscriber;
 use CachetHQ\Cachet\Models\User;
 use CachetHQ\Cachet\Settings\Cache;
 use CachetHQ\Cachet\Settings\Repository;
 use Illuminate\Foundation\Testing\TestCase;
+use Illuminate\Support\Facades\Bus;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Notification;
 
 /**
  * This is the abstract test case class.
  *
- * @author Graham Campbell <graham@alt-three.com>
- * @author James Brooks <james@alt-three.com>
  */
 abstract class AbstractTestCase extends TestCase
 {
-    use CreatesApplicationTrait;
+    use CreatesApplication;
 
     /**
      * Test actor.
@@ -38,7 +32,7 @@ abstract class AbstractTestCase extends TestCase
      *
      * @param \CachetHQ\Cachet\Models\User|null $user
      *
-     * @return \CachetHQ\Tests\Cachet\AbstractTestCase
+     * @return AbstractTestCase
      */
     protected function signIn(User $user = null)
     {
@@ -64,7 +58,7 @@ abstract class AbstractTestCase extends TestCase
     /**
      * Set up the needed configuration to be able to run the tests.
      *
-     * @return \CachetHQ\Tests\Cachet\AbstractTestCase
+     * @return AbstractTestCase
      */
     protected function setupConfig()
     {
@@ -82,14 +76,30 @@ abstract class AbstractTestCase extends TestCase
 
         $this->app->config->set('setting', $settings);
 
+        //
+        Bus::fake();
+        Event::fake();
+        Notification::fake();
+        Mail::fake();
+
+        $this->resetEvents();
+
         return $this;
     }
 
-    protected function setUp(): void
+    private function resetEvents()
     {
-        parent::setUp();
+        // Define the models that have event listeners.
+        $models = array('Subscriber','Tag');
 
-        config(['app.url' => 'http://localhost']);
-        \URL::forceRootUrl('http://localhost');
+        // Reset their event listeners.
+        foreach ($models as $model) {
+
+            // Flush any existing listeners.
+            call_user_func(array($model, 'flushEventListeners'));
+
+            // Reregister them.
+            call_user_func(array($model, 'boot'));
+        }
     }
 }

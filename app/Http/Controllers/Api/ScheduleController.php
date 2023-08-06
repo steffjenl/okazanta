@@ -77,7 +77,7 @@ class ScheduleController extends AbstractApiController
                 Binput::get('notify', false)
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($schedule);
@@ -103,7 +103,7 @@ class ScheduleController extends AbstractApiController
                 Binput::get('components', [])
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($schedule);
@@ -121,7 +121,7 @@ class ScheduleController extends AbstractApiController
         try {
             execute(new DeleteScheduleCommand($schedule));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->noContent();

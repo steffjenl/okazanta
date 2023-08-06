@@ -52,7 +52,7 @@ class SubscriberController extends AbstractApiController
         try {
             $subscriber = execute(new SubscribeSubscriberCommand(Binput::get('email'), $verified, Binput::get('components', null)));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($subscriber);

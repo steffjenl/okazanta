@@ -14,8 +14,8 @@ namespace CachetHQ\Cachet\Exceptions\Displayers;
 use Throwable;
 use GrahamCampbell\Exceptions\Displayer\DisplayerInterface;
 use Illuminate\Contracts\View\Factory;
-use Illuminate\Foundation\Http\Exceptions\MaintenanceModeException;
 use Illuminate\Http\Response;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 /**
  * This is the maintenance displayer class.
@@ -89,7 +89,8 @@ class MaintenanceDisplayer implements DisplayerInterface
      */
     public function canDisplay(Throwable $original, Throwable $transformed, int $code): bool
     {
-        return $transformed instanceof MaintenanceModeException;
+        //return false;
+        return ($transformed instanceof HttpException) && $transformed->getStatusCode() === 503;
     }
 
     /**

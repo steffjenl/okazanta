@@ -82,7 +82,7 @@ class IncidentController extends AbstractApiController
                 Binput::get('meta', [])
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($incident);
@@ -113,7 +113,7 @@ class IncidentController extends AbstractApiController
                 Binput::get('vars', [])
             ));
         } catch (QueryException $e) {
-            throw new BadRequestHttpException();
+            throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
         }
 
         return $this->item($incident);
