@@ -46,7 +46,7 @@
     "rebuild": "^0.1.2"
   },
   "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/Cachet"
+    "type": "paypal",
+    "url": "https://www.paypal.com/paypalme/steffjenl"
   }
 }

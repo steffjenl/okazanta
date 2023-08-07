@@ -159,35 +159,14 @@ class DemoSeederCommand extends Command
                 'status'      => 1,
                 'order'       => 0,
                 'group_id'    => 1,
-                'link'        => 'https://docs.cachethq.io',
-            ], [
-                'name'        => 'Website',
-                'description' => '',
-                'status'      => 1,
-                'order'       => 0,
-                'group_id'    => 1,
-                'link'        => 'https://cachethq.io',
-            ], [
-                'name'        => 'Blog',
-                'description' => 'The Alt Three Blog.',
-                'status'      => 1,
-                'order'       => 0,
-                'group_id'    => 2,
-                'link'        => 'https://blog.alt-three.com',
-            ], [
-                'name'        => 'StyleCI',
-                'description' => 'The PHP Coding Style Service.',
-                'status'      => 1,
-                'order'       => 1,
-                'group_id'    => 2,
-                'link'        => 'https://styleci.io',
+                'link'        => 'https://okazanta.readme.io/',
             ], [
                 'name'        => 'GitHub',
                 'description' => '',
                 'status'      => 1,
                 'order'       => 0,
                 'group_id'    => 0,
-                'link'        => 'https://github.com/CachetHQ/Cachet',
+                'link'        => 'https://github.com/steffjenl/okazanta-legacy',
             ],
         ];
 
@@ -379,19 +358,19 @@ EINCIDENT;
         $defaultSettings = [
             [
                 'key'   => 'app_name',
-                'value' => 'Cachet Demo',
+                'value' => 'Okazanta Demo',
             ], [
                 'key'   => 'app_domain',
-                'value' => 'https://demo.cachethq.io',
+                'value' => 'http://localhost',
             ], [
                 'key'   => 'show_support',
                 'value' => '1',
             ], [
                 'key'   => 'app_locale',
-                'value' => 'en',
+                'value' => 'en-US',
             ], [
                 'key'   => 'app_timezone',
-                'value' => 'Europe/London',
+                'value' => 'Europe/Amsterdam',
             ], [
                 'key'   => 'app_incident_days',
                 'value' => '7',
@@ -409,10 +388,10 @@ EINCIDENT;
                 'value' => '1',
             ], [
                 'key'   => 'app_about',
-                'value' => 'This is the demo instance of [Cachet](https://cachethq.io?ref=demo). The open source status page system, for everyone. An [Alt Three](https://alt-three.com) product.',
+                'value' => 'This is the demo instance of [Okazanta](https://github.com/steffjenl/okazanta-legacy). The open source status page system, for everyone.',
             ], [
                 'key'   => 'enable_subscribers',
-                'value' => '0',
+                'value' => '1',
             ],
         ];
 

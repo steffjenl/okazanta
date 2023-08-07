@@ -11,6 +11,7 @@
 
 namespace CachetHQ\Cachet\Services\Dates;
 
+use DateTime;
 use DateTimeZone;
 use Jenssegers\Date\Date;
 
@@ -103,7 +104,7 @@ class DateFactory
      */
     public function getTimezone()
     {
-        $dateTime = new Date();
+        $dateTime = new DateTime();
         $dateTime->setTimeZone(new DateTimeZone($this->cachetTimezone));
 
         return $dateTime->format('T');
