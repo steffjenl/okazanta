@@ -27,8 +27,10 @@
 
     <link href="{{ Request::fullUrl() }}" rel="canonical">
 
+    @if(!$app['config']->get('setting.always_authenticate', false))
     <!-- RSS -->
-    @include('feed::links')
+@include('feed::links')
+    @endif
 
     @if (isset($favicon))
     <link rel="icon" href="{{ asset("/img/{$favicon}.ico") }}" type="image/x-icon">
