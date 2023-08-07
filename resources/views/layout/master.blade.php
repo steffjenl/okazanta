@@ -29,7 +29,7 @@
 
     @if(!$app['config']->get('setting.always_authenticate', false))
     <!-- RSS -->
-@include('feed::links')
+    @include('feed::links')
     @endif
 
     @if (isset($favicon))
