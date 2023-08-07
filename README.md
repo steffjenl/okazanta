@@ -8,9 +8,9 @@ This project is a fork of the currently unmaintained [Cachet](https://github.com
 
 Okazanta was created with two purposes.
 
-1. To maintain, update, and modernise Cachet, squashing bugs, and updating security. 
+1. To maintain, update, and modernise Cachet, squashing bugs, and updating security.
 
-2. To add realtime server and site status monitoring with automatic alerts and status page updates. 
+2. To add realtime server and site status monitoring with automatic alerts and status page updates.
 
 Okazanta is released under the BSD-3 license [![Software License](https://img.shields.io/badge/license-BSD3-brightgreen.svg?style=flat-square)](LICENSE)
 
@@ -18,14 +18,22 @@ Okazanta is released under the BSD-3 license [![Software License](https://img.sh
 
 The name (loosely) comes from the Esperanto word for occurrence or incident. Both of those words seem a good fit for an app that reports what is happening, the OK at the sart of the word implies a 'positive status check', and since the project is universal and open to all, why not a little bit of Esperanto :)
 
-## Legacy?
+## Changelog
 
-The **Legacy** branch is an update to Cachet without major changes, it's bascially the old code with a few additions from other more updated forks, and will recieve essential security and stability fixes and other minimal updates. 
+- 3.1.1 - 2023-08-06
+  - Core: Laravel 10 upgrade
+  - Core: PHP 8.1 support
+  - Feature: Widget for your website or ticket system
 
-We will also be creating a new **Core** branch which will be based on Laravel 9 with all modern dependecies. There may be some breaking changes and it will not be ready for a while, but it will be the future of the Okazanta project. 
+- 3.0.1 - 2023-08-02
+  - Core: Laravel 8 upgrade
+  - Core: PHP 8.0 support
+  - Feature: Enable 2FA with QR Code
+  - Feature: RSS Feed support
+  - Bugfix: SQL Injection in API
 
 ## Get involved
 
-There is a huge amount to do, even to pull the existing code up to today before any other changes or steps forward, and we are happy for any help. 
+There is a huge amount to do, even to pull the existing code up to today before any other changes or steps forward, and we are happy for any help.
 
-Please DO start issues, comment on others, make PRs, and come and take part in discussion on [our Discord](https://discord.gg/4CtKuuHrqJ). 
+Please DO start issues, comment on others, make PRs.

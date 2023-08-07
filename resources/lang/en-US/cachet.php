@@ -30,7 +30,7 @@ return [
     // Incidents
     'incidents' => [
         'none'         => 'No incidents reported',
-        'past'         => 'Past Incidents',
+        'past'         => 'Incidents',
         'stickied'     => 'Stickied Incidents',
         'scheduled'    => 'Maintenance',
         'scheduled_at' => ', scheduled :timestamp',
