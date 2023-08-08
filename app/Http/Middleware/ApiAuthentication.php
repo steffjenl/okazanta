@@ -66,7 +66,15 @@ class ApiAuthentication
                         throw new HttpException(401);
                     }
                 }
-            } elseif ($required) {
+            } elseif($request->getUser()) {
+                try {
+                    $this->auth->onceUsingId(User::findByApiToken($request->getPassword())->id);
+                } catch (ModelNotFoundException $e) {
+                    if ($required) {
+                        throw new HttpException(401);
+                    }
+                }
+            } elseif($required) {
                 throw new HttpException(401);
             }
         }
