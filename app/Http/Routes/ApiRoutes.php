@@ -68,6 +68,7 @@ class ApiRoutes
 
                 $router->post('components', 'ComponentController@store')->name('post:api.components.store');
                 $router->post('components/groups', 'ComponentGroupController@store')->name('post:api.components.groups.store');
+                $router->post('components/{component}/webhook', 'ComponentController@webhook')->name('post:api.components.webhook');
                 $router->post('incidents', 'IncidentController@store')->name('post:api.incidents');
                 $router->post('incidents/{incident}/updates', 'IncidentUpdateController@store')->name('post:api.incidents.updates');
                 $router->post('metrics', 'MetricController@store')->name('post:api.metrics');

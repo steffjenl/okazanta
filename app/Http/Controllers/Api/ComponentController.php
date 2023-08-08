@@ -80,7 +80,7 @@ class ComponentController extends AbstractApiController
                 Binput::get('link'),
                 Binput::get('order'),
                 Binput::get('group_id'),
-                (bool) Binput::get('enabled', true),
+                (bool)Binput::get('enabled', true),
                 Binput::get('meta'),
                 Binput::get('tags')
             ));
@@ -112,7 +112,7 @@ class ComponentController extends AbstractApiController
                 Binput::get('enabled', $component->enabled),
                 Binput::get('meta'),
                 Binput::get('tags'),
-                (bool) Binput::get('silent', false)
+                (bool)Binput::get('silent', false)
             ));
         } catch (QueryException $e) {
             throw new BadRequestHttpException((env('APP_DEBUG') ? $e->getMessage() : null));
@@ -133,5 +133,67 @@ class ComponentController extends AbstractApiController
         execute(new RemoveComponentCommand($component));
 
         return $this->noContent();
+    }
+
+    /**
+     * Update an existing component with an webhook.
+     *
+     * @param \CachetHQ\Cachet\Models\Component $component
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function webhook(Component $component, Request $request)
+    {
+        // get data from json
+        $data = json_decode($request::getContent(), true);
+
+        $status = 3;
+        $silent = false;
+
+        if (!empty($data['status'])) {
+            // set status
+            switch ($data['status']) {
+                case 'success':
+                case 'info':
+                    $status = 1;
+                    break;
+                default:
+                    $status = 3;
+                    break;
+            }
+        }
+
+        if (!empty($data['silent']))
+        {
+            // set silent
+            switch ($data['silent']) {
+                case 1:
+                    $silent = true;
+                    break;
+                default:
+                    $silent = false;
+                    break;
+            }
+        }
+
+        try {
+            execute(new UpdateComponentCommand(
+                $component,
+                $component->name,
+                $component->description,
+                $status,
+                $component->link,
+                $component->order,
+                $component->group_id,
+                $component->enabled,
+                $component->meta,
+                false,
+                $silent
+            ));
+        } catch (QueryException $e) {
+            throw new BadRequestHttpException();
+        }
+
+        return $this->item($component);
     }
 }

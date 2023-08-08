@@ -61,4 +61,19 @@ import Flatpickr from 'flatpickr'
             'metric-chart': require('./components/status-page/Metric').default,
         }
     });
-})()
+})();
+
+$(function () {
+    window.generateWebhookToken = function ()  {
+        let result = '';
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        const charactersLength = characters.length;
+        let counter = 0;
+        while (counter < 32) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            counter += 1;
+        }
+
+        $('#componentWebhookToken').val(result);
+    }
+});
