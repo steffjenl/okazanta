@@ -1,4 +1,6 @@
-<p align="center"><img src="https://okazanta.com/assets/okazanta-logo-01.svg" width="150px"></p>
+<p align="center"><img src="public/img/logo.svg" width="150px"></p>
+
+[![Laravel](https://github.com/steffjenl/okazanta/actions/workflows/laravel.yml/badge.svg)](https://github.com/steffjenl/okazanta/actions/workflows/laravel.yml)
 
 # Okazanta
 
@@ -13,8 +15,6 @@ Okazanta was created with two purposes.
 2. To add realtime server and site status monitoring with automatic alerts and status page updates.
 
 Okazanta is released under the BSD-3 license [![Software License](https://img.shields.io/badge/license-BSD3-brightgreen.svg?style=flat-square)](LICENSE)
-
-[![Laravel](https://github.com/steffjenl/okazanta/actions/workflows/laravel.yml/badge.svg)](https://github.com/steffjenl/okazanta/actions/workflows/laravel.yml)
 
 ## Okawhat?
 
