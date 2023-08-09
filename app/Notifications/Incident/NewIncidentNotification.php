@@ -58,7 +58,17 @@ class NewIncidentNotification extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail'];
+        $via = [];
+        if ($notifiable->email) {
+            $via[] = 'mail';
+        }
+        if ($notifiable->phone_number) {
+            $via[] = 'vonage';
+        }
+        if ($notifiable->slack_webhook_url) {
+            $via[] = 'slack';
+        }
+        return $via;
     }
 
     /**
