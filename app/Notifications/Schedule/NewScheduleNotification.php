@@ -63,7 +63,7 @@ class NewScheduleNotification extends Notification implements ShouldQueue
      */
     public function via($notifiable)
     {
-        return ['mail', 'vonage', 'slack'];
+        return ['mail'];
     }
 
     /**
