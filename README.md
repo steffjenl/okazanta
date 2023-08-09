@@ -14,6 +14,8 @@ Okazanta was created with two purposes.
 
 Okazanta is released under the BSD-3 license [![Software License](https://img.shields.io/badge/license-BSD3-brightgreen.svg?style=flat-square)](LICENSE)
 
+[![Laravel](https://github.com/steffjenl/okazanta/actions/workflows/laravel.yml/badge.svg)](https://github.com/steffjenl/okazanta/actions/workflows/laravel.yml)
+
 ## Okawhat?
 
 The name (loosely) comes from the Esperanto word for occurrence or incident. Both of those words seem a good fit for an app that reports what is happening, the OK at the sart of the word implies a 'positive status check', and since the project is universal and open to all, why not a little bit of Esperanto :)
@@ -22,6 +24,8 @@ The name (loosely) comes from the Esperanto word for occurrence or incident. Bot
 
 - 3.1.2 - 2023-08-xx
     - Feature: Webhook component update support /api/v1/components/:componentid/webhook
+    - Feature: Remove beacon functionality and changed credits to GitHub repo.
+
 - 3.1.1 - 2023-08-06
   - Core: Laravel 10 upgrade
   - Core: PHP 8.1 support
