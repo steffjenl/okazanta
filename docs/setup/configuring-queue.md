@@ -1,6 +1,6 @@
 # Configuring the queue
 
-Cachet uses a queue to send Configuring Mail and Beacons without slowing down
+Cachet uses a queue to send Configuring Mail without slowing down
 the rest of the application. This can be setup in a variety of ways.
 
 ## Supervisor

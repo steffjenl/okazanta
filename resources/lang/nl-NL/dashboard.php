@@ -251,7 +251,7 @@ return [
         'credits' => [
             'credits'       => 'Credits',
             'contributors'  => 'Bijdragers',
-            'license'       => 'Okazanta is een open source product onder de BSD-3 licentie, uitgebracht door <a href="https://alt-three.com/?utm_source=Okazanta&utm_medium=credits&utm_campaign=Okazanta%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
+            'license'       => 'Okazanta is een open source product onder de BSD-3 licentie.',
             'backers-title' => 'Donateurs & Sponsoren',
             'backers'       => 'Als u de toekomstige ontwikkeling wilt ondersteunen, bezoek de <a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">Okazanta PayPal</a> campagne.',
             'thank-you'     => 'Onze dank gaat uit naar elk van de :count verschillende bijdragers.',

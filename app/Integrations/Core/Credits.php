@@ -29,7 +29,7 @@ class Credits implements CreditsContract
      *
      * @var string
      */
-    const URL = 'https://cachethq.io/credits';
+    const URL = 'https://raw.githubusercontent.com/steffjenl/okazanta/develop/credits.json';
 
     /**
      * The failed status indicator.
@@ -76,7 +76,7 @@ class Credits implements CreditsContract
         $result = $this->cache->remember('credits', 2880, function () {
             try {
                 return json_decode((new Client())->get($this->url, [
-                    'headers' => ['Accept' => 'application/json', 'User-Agent' => defined('CACHET_VERSION') ? 'cachet/'.constant('CACHET_VERSION') : 'cachet'],
+                    'headers' => ['Accept' => 'application/json', 'User-Agent' => defined('CACHET_VERSION') ? 'okazanta/'.constant('CACHET_VERSION') : 'okazanta'],
                 ])->getBody(), true);
             } catch (Exception $e) {
                 return self::FAILED;

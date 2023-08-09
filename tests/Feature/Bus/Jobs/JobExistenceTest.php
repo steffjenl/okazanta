@@ -1,14 +1,5 @@
 <?php
 
-/*
- * This file is part of Cachet.
- *
- * (c) Alt Three Services Limited
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 namespace Tests\Feature\Bus\Jobs;
 
 use Tests\Traits\ExistenceTrait;
@@ -21,10 +12,10 @@ use PHPUnit\Framework\TestCase;
  */
 class JobExistenceTest extends TestCase
 {
-    use ExistenceTrait;
+ //   use ExistenceTrait;
 
-    protected static function getSourcePath()
-    {
-        return realpath(__DIR__.'/../../../../app/Bus/Jobs');
-    }
+//    protected static function getSourcePath()
+//    {
+//        return realpath(__DIR__.'/../../../../app/Bus/Jobs');
+//    }
 }

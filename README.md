@@ -20,6 +20,8 @@ The name (loosely) comes from the Esperanto word for occurrence or incident. Bot
 
 ## Changelog
 
+- 3.1.2 - 2023-08-xx
+    - Feature: Webhook component update support /api/v1/components/:componentid/webhook
 - 3.1.1 - 2023-08-06
   - Core: Laravel 10 upgrade
   - Core: PHP 8.1 support

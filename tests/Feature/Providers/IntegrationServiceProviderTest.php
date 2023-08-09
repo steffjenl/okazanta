@@ -11,7 +11,6 @@
 
 namespace Tests\Feature\Providers;
 
-use CachetHQ\Cachet\Integrations\Contracts\Beacon;
 use CachetHQ\Cachet\Integrations\Contracts\Credits;
 use CachetHQ\Cachet\Integrations\Contracts\Feed;
 use CachetHQ\Cachet\Integrations\Contracts\Releases;
@@ -25,11 +24,6 @@ use Tests\ServiceProviderTestCase;
  */
 class IntegrationServiceProviderTest extends ServiceProviderTestCase
 {
-
-    public function testBeaconIsInjectable()
-    {
-        $this->assertIsInjectable(Beacon::class);
-    }
 
     public function testCreditsIsInjectable()
     {
