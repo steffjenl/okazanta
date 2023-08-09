@@ -14,6 +14,7 @@ namespace CachetHQ\Cachet\Composers;
 use CachetHQ\Cachet\Models\Component;
 use CachetHQ\Cachet\Models\Incident;
 use CachetHQ\Cachet\Models\IncidentTemplate;
+use CachetHQ\Cachet\Models\Monitor;
 use CachetHQ\Cachet\Models\Schedule;
 use CachetHQ\Cachet\Models\Subscriber;
 use Illuminate\Contracts\View\View;
@@ -23,6 +24,7 @@ use Illuminate\Contracts\View\View;
  *
  * @author James Brooks <james@alt-three.com>
  * @author Graham Campbell <graham@alt-three.com>
+ * @author Stephan Eizinga <stephan@monkeysoft.nl>
  */
 class DashboardComposer
 {
@@ -62,6 +64,13 @@ class DashboardComposer
     protected $subscriberCount;
 
     /**
+     * The monitor count.
+     *
+     * @var int
+     */
+    protected $monitorCount;
+
+    /**
      * Create a new dashboard composer instance.
      *
      * @return void
@@ -87,6 +96,10 @@ class DashboardComposer
         if (is_null($this->subscriberCount)) {
             $this->subscriberCount = Subscriber::isVerified()->count();
         }
+
+        if (is_null($this->monitorCount)) {
+            $this->monitorCount = Monitor::count();
+        }
     }
 
     /**
@@ -103,6 +116,7 @@ class DashboardComposer
         $view->withIncidentTemplateCount($this->incidentTemplateCount);
         $view->withScheduleCount($this->scheduleCount);
         $view->withSubscriberCount($this->subscriberCount);
+        $view->withMonitorCount($this->monitorCount);
         $view->withIsWriteable(is_writable(app()->bootstrapPath().'/cachet'));
     }
 }

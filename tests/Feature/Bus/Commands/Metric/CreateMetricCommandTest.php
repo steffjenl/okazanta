@@ -12,7 +12,7 @@
 namespace Tests\Feature\Bus\Commands\Metric;
 
 use Tests\Traits\CommandTrait;
-use CachetHQ\Cachet\Bus\Commands\Metric\CreateMetricCommand;
+use CachetHQ\Cachet\Bus\Commands\Metric\CreateMonitorCommand;
 use CachetHQ\Cachet\Bus\Handlers\Commands\Metric\CreateMetricCommandHandler;
 use Tests\TestCase as AbstractTestCase;
 
@@ -42,7 +42,7 @@ class CreateMetricCommandTest extends AbstractTestCase
             'visible'       => 1,
         ];
 
-        $object = new CreateMetricCommand(
+        $object = new CreateMonitorCommand(
             $params['name'],
             $params['suffix'],
             $params['description'],

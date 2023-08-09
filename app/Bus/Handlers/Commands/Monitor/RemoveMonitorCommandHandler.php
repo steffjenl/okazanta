@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace CachetHQ\Cachet\Bus\Handlers\Commands\Metric;
+namespace CachetHQ\Cachet\Bus\Handlers\Commands\Monitor;
 
-use CachetHQ\Cachet\Bus\Commands\Metric\RemoveMonitorCommand;
-use CachetHQ\Cachet\Bus\Events\Metric\MetricWasRemovedEvent;
-use CachetHQ\Cachet\Models\Metric;
+use CachetHQ\Cachet\Bus\Commands\Monitor\RemoveMonitorCommand;
+use CachetHQ\Cachet\Bus\Events\Monitor\MonitorWasRemovedEvent;
+use CachetHQ\Cachet\Models\Monitor;
 use Illuminate\Contracts\Auth\Guard;
 
-class RemoveMetricCommandHandler
+class RemoveMonitorCommandHandler
 {
     /**
      * The authentication guard instance.
@@ -26,7 +26,7 @@ class RemoveMetricCommandHandler
     protected $auth;
 
     /**
-     * Create a new remove metric command handler instance.
+     * Create a new remove monitor command handler instance.
      *
      * @param \Illuminate\Contracts\Auth\Guard $auth
      *
@@ -38,18 +38,18 @@ class RemoveMetricCommandHandler
     }
 
     /**
-     * Handle the remove metric command.
+     * Handle the remove monitor command.
      *
-     * @param \CachetHQ\Cachet\Bus\Commands\Metric\RemoveMonitorCommand $command
+     * @param \CachetHQ\Cachet\Bus\Commands\Monitor\RemoveMonitorCommand $command
      *
      * @return void
      */
     public function handle(RemoveMonitorCommand $command)
     {
-        $metric = $command->metric;
+        $monitor = $command->monitor;
 
-        event(new MetricWasRemovedEvent($this->auth->user(), $metric));
+        event(new MonitorWasRemovedEvent($this->auth->user(), $monitor));
 
-        $metric->delete();
+        $monitor->delete();
     }
 }

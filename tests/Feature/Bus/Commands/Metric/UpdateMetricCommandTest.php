@@ -12,8 +12,8 @@
 namespace Tests\Feature\Bus\Commands\Metric;
 
 use Tests\Traits\CommandTrait;
-use CachetHQ\Cachet\Bus\Commands\Metric\UpdateMetricCommand;
-use CachetHQ\Cachet\Bus\Handlers\Commands\Metric\UpdateMetricCommandHandler;
+use CachetHQ\Cachet\Bus\Commands\Metric\UpdateMonitorCommand;
+use CachetHQ\Cachet\Bus\Handlers\Commands\Metric\UpdateMonitorCommandHandler;
 use CachetHQ\Cachet\Models\Metric;
 use Tests\TestCase as AbstractTestCase;
 
@@ -44,7 +44,7 @@ class UpdateMetricCommandTest extends AbstractTestCase
             'visible'       => 1,
         ];
 
-        $object = new UpdateMetricCommand(
+        $object = new UpdateMonitorCommand(
             $params['metric'],
             $params['name'],
             $params['suffix'],
@@ -69,6 +69,6 @@ class UpdateMetricCommandTest extends AbstractTestCase
 
     protected function getHandlerClass()
     {
-        return UpdateMetricCommandHandler::class;
+        return UpdateMonitorCommandHandler::class;
     }
 }

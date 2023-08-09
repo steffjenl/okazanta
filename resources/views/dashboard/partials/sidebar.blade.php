@@ -53,6 +53,13 @@
                     <span>{{ trans('dashboard.metrics.metrics') }}</span>
                 </a>
             </li>
+            <li {!! set_active('dashboard/monitors*') !!}>
+                <a href="{{ cachet_route('dashboard.monitors') }}">
+                    <i class="ion ion-ios-heart-outline"></i>
+                    <span>{{ trans('dashboard.monitors.monitors') }}</span>
+                    <span class="label label-info">{{ $monitorCount }}</span>
+                </a>
+            </li>
             <li {!! set_active('dashboard/subscribers*') !!}>
                 <a href="{{ cachet_route('dashboard.subscribers') }}">
                     <i class="ion ion-ios-email-outline"></i>

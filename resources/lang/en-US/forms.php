@@ -144,6 +144,12 @@ return [
         ],
     ],
 
+    // Monitors form fields
+    'monitors' => [
+        'name'                     => 'Name',
+        'description'              => 'Description',
+    ],
+
     // Settings
     'settings' => [
         // Application setup

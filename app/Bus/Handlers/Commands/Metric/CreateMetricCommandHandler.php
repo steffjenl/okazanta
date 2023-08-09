@@ -11,7 +11,7 @@
 
 namespace CachetHQ\Cachet\Bus\Handlers\Commands\Metric;
 
-use CachetHQ\Cachet\Bus\Commands\Metric\CreateMetricCommand;
+use CachetHQ\Cachet\Bus\Commands\Metric\CreateMonitorCommand;
 use CachetHQ\Cachet\Bus\Events\Metric\MetricWasCreatedEvent;
 use CachetHQ\Cachet\Models\Metric;
 use Illuminate\Contracts\Auth\Guard;
@@ -40,11 +40,11 @@ class CreateMetricCommandHandler
     /**
      * Handle the add metric command.
      *
-     * @param \CachetHQ\Cachet\Bus\Commands\Metric\CreateMetricCommand $command
+     * @param \CachetHQ\Cachet\Bus\Commands\Metric\CreateMonitorCommand $command
      *
      * @return \CachetHQ\Cachet\Models\Metric
      */
-    public function handle(CreateMetricCommand $command)
+    public function handle(CreateMonitorCommand $command)
     {
         $metric = Metric::create([
             'name'          => $command->name,

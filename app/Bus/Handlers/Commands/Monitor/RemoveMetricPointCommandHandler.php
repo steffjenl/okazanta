@@ -11,12 +11,12 @@
 
 namespace CachetHQ\Cachet\Bus\Handlers\Commands\Metric;
 
-use CachetHQ\Cachet\Bus\Commands\Metric\RemoveMonitorCommand;
-use CachetHQ\Cachet\Bus\Events\Metric\MetricWasRemovedEvent;
+use CachetHQ\Cachet\Bus\Commands\Metric\RemoveMetricPointCommand;
+use CachetHQ\Cachet\Bus\Events\Metric\MetricPointWasRemovedEvent;
 use CachetHQ\Cachet\Models\Metric;
 use Illuminate\Contracts\Auth\Guard;
 
-class RemoveMetricCommandHandler
+class RemoveMetricPointCommandHandler
 {
     /**
      * The authentication guard instance.
@@ -26,7 +26,7 @@ class RemoveMetricCommandHandler
     protected $auth;
 
     /**
-     * Create a new remove metric command handler instance.
+     * Create a new remove metric point command handler instance.
      *
      * @param \Illuminate\Contracts\Auth\Guard $auth
      *
@@ -38,18 +38,18 @@ class RemoveMetricCommandHandler
     }
 
     /**
-     * Handle the remove metric command.
+     * Handle the remove metric point command.
      *
-     * @param \CachetHQ\Cachet\Bus\Commands\Metric\RemoveMonitorCommand $command
+     * @param \CachetHQ\Cachet\Bus\Commands\Metric\RemoveMetricPointCommand $command
      *
      * @return void
      */
-    public function handle(RemoveMonitorCommand $command)
+    public function handle(RemoveMetricPointCommand $command)
     {
-        $metric = $command->metric;
+        $metricPoint = $command->metricPoint;
 
-        event(new MetricWasRemovedEvent($this->auth->user(), $metric));
+        event(new MetricPointWasRemovedEvent($this->auth->user(), $metricPoint));
 
-        $metric->delete();
+        $metricPoint->delete();
     }
 }

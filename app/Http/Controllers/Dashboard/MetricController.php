@@ -12,9 +12,9 @@
 namespace CachetHQ\Cachet\Http\Controllers\Dashboard;
 
 use AltThree\Validator\ValidationException;
-use CachetHQ\Cachet\Bus\Commands\Metric\CreateMetricCommand;
-use CachetHQ\Cachet\Bus\Commands\Metric\RemoveMetricCommand;
-use CachetHQ\Cachet\Bus\Commands\Metric\UpdateMetricCommand;
+use CachetHQ\Cachet\Bus\Commands\Metric\CreateMonitorCommand;
+use CachetHQ\Cachet\Bus\Commands\Metric\RemoveMonitorCommand;
+use CachetHQ\Cachet\Bus\Commands\Metric\UpdateMonitorCommand;
 use CachetHQ\Cachet\Models\Metric;
 use CachetHQ\Cachet\Models\MetricPoint;
 use GrahamCampbell\Binput\Facades\Binput;
@@ -70,7 +70,7 @@ class MetricController extends Controller
         $metricData = Binput::get('metric');
 
         try {
-            execute(new CreateMetricCommand(
+            execute(new CreateMonitorCommand(
                 $metricData['name'],
                 $metricData['suffix'],
                 $metricData['description'],
@@ -114,7 +114,7 @@ class MetricController extends Controller
      */
     public function deleteMetricAction(Metric $metric)
     {
-        execute(new RemoveMetricCommand($metric));
+        execute(new RemoveMonitorCommand($metric));
 
         return cachet_redirect('dashboard.metrics')
             ->withSuccess(sprintf('%s %s', trans('dashboard.notifications.awesome'), trans('dashboard.metrics.delete.success')));
@@ -144,7 +144,7 @@ class MetricController extends Controller
     public function editMetricAction(Metric $metric)
     {
         try {
-            execute(new UpdateMetricCommand(
+            execute(new UpdateMonitorCommand(
                 $metric,
                 Binput::get('name', null, false),
                 Binput::get('suffix', null, false),

@@ -11,7 +11,7 @@
 
 namespace CachetHQ\Cachet\Bus\Handlers\Commands\Metric;
 
-use CachetHQ\Cachet\Bus\Commands\Metric\UpdateMetricCommand;
+use CachetHQ\Cachet\Bus\Commands\Metric\UpdateMonitorCommand;
 use CachetHQ\Cachet\Bus\Events\Metric\MetricWasUpdatedEvent;
 use CachetHQ\Cachet\Models\Metric;
 use Illuminate\Contracts\Auth\Guard;
@@ -40,11 +40,11 @@ class UpdateMetricCommandHandler
     /**
      * Handle the update metric command.
      *
-     * @param \CachetHQ\Cachet\Bus\Commands\Metric\UpdateMetricCommand $command
+     * @param \CachetHQ\Cachet\Bus\Commands\Metric\UpdateMonitorCommand $command
      *
      * @return \CachetHQ\Cachet\Models\Metric
      */
-    public function handle(UpdateMetricCommand $command)
+    public function handle(UpdateMonitorCommand $command)
     {
         $metric = $command->metric;
 
@@ -58,11 +58,11 @@ class UpdateMetricCommandHandler
     /**
      * Filter the command data.
      *
-     * @param \CachetHQ\Cachet\Bus\Commands\Metric\UpdateMetricCommand $command
+     * @param \CachetHQ\Cachet\Bus\Commands\Metric\UpdateMonitorCommand $command
      *
      * @return array
      */
-    protected function filter(UpdateMetricCommand $command)
+    protected function filter(UpdateMonitorCommand $command)
     {
         $params = [
             'name'          => $command->name,

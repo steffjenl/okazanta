@@ -154,6 +154,26 @@ return [
             'failure' => 'The metric could not be deleted, please try again.',
         ],
     ],
+
+    'monitors' => [
+        'monitors' => 'Monitors',
+        'add'     => [
+            'title'   => 'Create a monitor',
+            'message' => 'You should add a monitor.',
+            'success' => 'Monitor created.',
+            'failure' => 'Something went wrong with the monitor, please try again.',
+        ],
+        'edit' => [
+            'title'   => 'Edit a monitor',
+            'success' => 'Monitor updated.',
+            'failure' => 'Something went wrong with the monitor, please try again.',
+        ],
+        'delete' => [
+            'success' => 'The monitor has been deleted.',
+            'failure' => 'The monitor could not be deleted, please try again.',
+        ],
+    ],
+
     // Subscribers
     'subscribers' => [
         'subscribers'          => 'Subscribers',

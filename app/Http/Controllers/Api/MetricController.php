@@ -11,9 +11,9 @@
 
 namespace CachetHQ\Cachet\Http\Controllers\Api;
 
-use CachetHQ\Cachet\Bus\Commands\Metric\CreateMetricCommand;
-use CachetHQ\Cachet\Bus\Commands\Metric\RemoveMetricCommand;
-use CachetHQ\Cachet\Bus\Commands\Metric\UpdateMetricCommand;
+use CachetHQ\Cachet\Bus\Commands\Metric\CreateMonitorCommand;
+use CachetHQ\Cachet\Bus\Commands\Metric\RemoveMonitorCommand;
+use CachetHQ\Cachet\Bus\Commands\Metric\UpdateMonitorCommand;
 use CachetHQ\Cachet\Models\Metric;
 use GrahamCampbell\Binput\Facades\Binput;
 use Illuminate\Database\QueryException;
@@ -62,7 +62,7 @@ class MetricController extends AbstractApiController
     public function store()
     {
         try {
-            $metric = execute(new CreateMetricCommand(
+            $metric = execute(new CreateMonitorCommand(
                 Binput::get('name'),
                 Binput::get('suffix'),
                 Binput::get('description'),
@@ -92,7 +92,7 @@ class MetricController extends AbstractApiController
     public function update(Metric $metric)
     {
         try {
-            $metric = execute(new UpdateMetricCommand(
+            $metric = execute(new UpdateMonitorCommand(
                 $metric,
                 Binput::get('name'),
                 Binput::get('suffix'),
@@ -122,7 +122,7 @@ class MetricController extends AbstractApiController
      */
     public function destroy(Metric $metric)
     {
-        execute(new RemoveMetricCommand($metric));
+        execute(new RemoveMonitorCommand($metric));
 
         return $this->noContent();
     }

@@ -12,8 +12,8 @@
 namespace Tests\Feature\Bus\Commands\Metric;
 
 use Tests\Traits\CommandTrait;
-use CachetHQ\Cachet\Bus\Commands\Metric\RemoveMetricCommand;
-use CachetHQ\Cachet\Bus\Handlers\Commands\Metric\RemoveMetricCommandHandler;
+use CachetHQ\Cachet\Bus\Commands\Metric\RemoveMonitorCommand;
+use CachetHQ\Cachet\Bus\Handlers\Commands\Metric\RemoveMonitorCommandHandler;
 use CachetHQ\Cachet\Models\Metric;
 use Tests\TestCase as AbstractTestCase;
 
@@ -30,13 +30,13 @@ class RemoveMetricCommandTest extends AbstractTestCase
     protected function getObjectAndParams()
     {
         $params = ['metric' => new Metric()];
-        $object = new RemoveMetricCommand($params['metric']);
+        $object = new RemoveMonitorCommand($params['metric']);
 
         return compact('params', 'object');
     }
 
     protected function getHandlerClass()
     {
-        return RemoveMetricCommandHandler::class;
+        return RemoveMonitorCommandHandler::class;
     }
 }
