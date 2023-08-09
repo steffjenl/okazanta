@@ -11,12 +11,10 @@
 
 namespace CachetHQ\Cachet\Providers;
 
-use CachetHQ\Cachet\Integrations\Contracts\Beacon as BeaconContract;
 use CachetHQ\Cachet\Integrations\Contracts\Credits as CreditsContract;
 use CachetHQ\Cachet\Integrations\Contracts\Feed as FeedContract;
 use CachetHQ\Cachet\Integrations\Contracts\Releases as ReleasesContract;
 use CachetHQ\Cachet\Integrations\Contracts\System as SystemContract;
-use CachetHQ\Cachet\Integrations\Core\Beacon;
 use CachetHQ\Cachet\Integrations\Core\Credits;
 use CachetHQ\Cachet\Integrations\Core\Feed;
 use CachetHQ\Cachet\Integrations\Core\System;
@@ -38,7 +36,6 @@ class IntegrationServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->registerBeacon();
         $this->registerCredits();
         $this->registerFeed();
         $this->registerSystem();
@@ -46,19 +43,6 @@ class IntegrationServiceProvider extends ServiceProvider
         $this->registerReleases();
     }
 
-    /**
-     * Register the beacon class.
-     *
-     * @return void
-     */
-    protected function registerBeacon()
-    {
-        $this->app->singleton(BeaconContract::class, function ($app) {
-            $config = $app['config'];
-
-            return new Beacon($config);
-        });
-    }
 
     /**
      * Register the credits class.

@@ -251,7 +251,7 @@ return [
         'credits' => [
             'credits'       => 'Credits',
             'contributors'  => 'Contributors',
-            'license'       => 'Okazanta is a BSD-3-licensed open source project, released by <a href="https://alt-three.com/?utm_source=Okazanta&utm_medium=credits&utm_campaign=Okazanta%20Credit%20Dashboard" target="_blank">Alt Three Services Limited</a>.',
+            'license'       => 'Okazanta is a BSD-3-licensed open source project.',
             'backers-title' => 'Backers & Sponsors',
             'backers'       => 'If you\'d like to support future development, check out the <a href="https://www.paypal.com/paypalme/steffjenl" target="_blank">Okazanta PayPal</a> campaign.',
             'thank-you'     => 'Thank you to each and every one of the :count contributors.',

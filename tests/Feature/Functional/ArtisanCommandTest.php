@@ -35,11 +35,6 @@ class ArtisanCommandTest extends AbstractTestCase
         $this->assertSame(0, $this->app->make(Kernel::class)->call('cachet:seed'));
     }
 
-    public function testBeacon()
-    {
-        $this->assertSame(0, $this->app->make(Kernel::class)->call('cachet:beacon'));
-    }
-
     public function testVersion()
     {
         $this->assertSame(0, $this->app->make(Kernel::class)->call('cachet:version'));

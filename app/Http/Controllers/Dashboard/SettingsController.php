@@ -250,12 +250,19 @@ class SettingsController extends Controller
      */
     public function showCreditsView()
     {
+        $backers = [];
+        $contributors = [];
+
         $this->subMenu['credits']['active'] = true;
 
         $credits = app(Credits::class)->latest();
 
-        $backers = $credits['backers'];
-        $contributors = $credits['contributors'];
+        if (!is_null($credits))
+        {
+            $backers = $credits['backers'];
+            $contributors = $credits['contributors'];
+        }
+
 
         shuffle($backers);
         shuffle($contributors);

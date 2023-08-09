@@ -1,5 +1,6 @@
 /.idea
 /.vagrant
+/.phpunit.cache
 /docker
 /node_modules
 /public/hot

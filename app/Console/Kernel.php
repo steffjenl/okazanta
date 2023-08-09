@@ -13,7 +13,6 @@ namespace CachetHQ\Cachet\Console;
 
 use CachetHQ\Cachet\Console\Commands\AppResetCommand;
 use CachetHQ\Cachet\Console\Commands\AppUpdateCommand;
-use CachetHQ\Cachet\Console\Commands\BeaconCommand;
 use CachetHQ\Cachet\Console\Commands\DemoMetricPointSeederCommand;
 use CachetHQ\Cachet\Console\Commands\DemoSeederCommand;
 use CachetHQ\Cachet\Console\Commands\InstallCommand;
@@ -38,7 +37,6 @@ class Kernel extends ConsoleKernel
     protected $commands = [
         AppResetCommand::class,
         AppUpdateCommand::class,
-        BeaconCommand::class,
         DemoMetricPointSeederCommand::class,
         DemoSeederCommand::class,
         InstallCommand::class,

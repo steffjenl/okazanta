@@ -1,0 +1,471 @@
+{
+  "backers": [
+    {
+      "name": "John Feulner"
+    },
+    {
+      "name": "Maartje Eyskens"
+    },
+    {
+      "name": "Sentry.io"
+    },
+    {
+      "name": "Exascale"
+    },
+    {
+      "name": "Simon Shmitz"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "jbrooksuk",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/246103?v=3&s=100",
+      "site": "https:\/\/github.com\/jbrooksuk"
+    },
+    {
+      "name": "GrahamCampbell",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/2829600?v=3&s=100",
+      "site": "https:\/\/github.com\/GrahamCampbell"
+    },
+    {
+      "name": "joecohens",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1803556?v=3&s=100",
+      "site": "https:\/\/github.com\/joecohens"
+    },
+    {
+      "name": "manavo",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/259487?v=3&s=100",
+      "site": "https:\/\/github.com\/manavo"
+    },
+    {
+      "name": "phecho",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/15666864?v=3&s=100",
+      "site": "https:\/\/github.com\/phecho"
+    },
+    {
+      "name": "Ehesp",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/842078?v=3&s=100",
+      "site": "https:\/\/github.com\/Ehesp"
+    },
+    {
+      "name": "billmn",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/779534?v=3&s=100",
+      "site": "https:\/\/github.com\/billmn"
+    },
+    {
+      "name": "n0mer",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1862997?v=3&s=100",
+      "site": "https:\/\/github.com\/n0mer"
+    },
+    {
+      "name": "mmollick",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/2349344?v=3&s=100",
+      "site": "https:\/\/github.com\/mmollick"
+    },
+    {
+      "name": "gm-ah",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/6681948?v=3&s=100",
+      "site": "https:\/\/github.com\/gm-ah"
+    },
+    {
+      "name": "ldidry",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/922350?v=3&s=100",
+      "site": "https:\/\/github.com\/ldidry"
+    },
+    {
+      "name": "chaseconey",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1449463?v=3&s=100",
+      "site": "https:\/\/github.com\/chaseconey"
+    },
+    {
+      "name": "sammcj",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/862951?v=3&s=100",
+      "site": "https:\/\/github.com\/sammcj"
+    },
+    {
+      "name": "TheoBearman",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/6546590?v=3&s=100",
+      "site": "https:\/\/github.com\/TheoBearman"
+    },
+    {
+      "name": "noahbass",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/3453188?v=3&s=100",
+      "site": "https:\/\/github.com\/noahbass"
+    },
+    {
+      "name": "thehereward",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/5547470?v=3&s=100",
+      "site": "https:\/\/github.com\/thehereward"
+    },
+    {
+      "name": "mrbase",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/304661?v=3&s=100",
+      "site": "https:\/\/github.com\/mrbase"
+    },
+    {
+      "name": "Jamesking56",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/253237?v=3&s=100",
+      "site": "https:\/\/github.com\/Jamesking56"
+    },
+    {
+      "name": "darkpixel",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/158380?v=3&s=100",
+      "site": "https:\/\/github.com\/darkpixel"
+    },
+    {
+      "name": "SamuelMoraesF",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/3705263?v=3&s=100",
+      "site": "https:\/\/github.com\/SamuelMoraesF"
+    },
+    {
+      "name": "ilikeprograms",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/662870?v=3&s=100",
+      "site": "https:\/\/github.com\/ilikeprograms"
+    },
+    {
+      "name": "jaxxstorm",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1622940?v=3&s=100",
+      "site": "https:\/\/github.com\/jaxxstorm"
+    },
+    {
+      "name": "fabian",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/13346?v=3&s=100",
+      "site": "https:\/\/github.com\/fabian"
+    },
+    {
+      "name": "meyskens",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1625272?v=3&s=100",
+      "site": "https:\/\/github.com\/meyskens"
+    },
+    {
+      "name": "anlutro",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/163093?v=3&s=100",
+      "site": "https:\/\/github.com\/anlutro"
+    },
+    {
+      "name": "EdeMeijer",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/5758565?v=3&s=100",
+      "site": "https:\/\/github.com\/EdeMeijer"
+    },
+    {
+      "name": "Lavoaster",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/838613?v=3&s=100",
+      "site": "https:\/\/github.com\/Lavoaster"
+    },
+    {
+      "name": "mattclements",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/804802?v=3&s=100",
+      "site": "https:\/\/github.com\/mattclements"
+    },
+    {
+      "name": "demlasjr",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/3158363?v=3&s=100",
+      "site": "https:\/\/github.com\/demlasjr"
+    },
+    {
+      "name": "guanshiliang",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/4077176?v=3&s=100",
+      "site": "https:\/\/github.com\/guanshiliang"
+    },
+    {
+      "name": "lenovouser",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/7549136?v=3&s=100",
+      "site": "https:\/\/github.com\/lenovouser"
+    },
+    {
+      "name": "ZengineChris",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1749043?v=3&s=100",
+      "site": "https:\/\/github.com\/ZengineChris"
+    },
+    {
+      "name": "ajtrichards",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/528976?v=3&s=100",
+      "site": "https:\/\/github.com\/ajtrichards"
+    },
+    {
+      "name": "reginaldojunior",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/7466894?v=3&s=100",
+      "site": "https:\/\/github.com\/reginaldojunior"
+    },
+    {
+      "name": "djdefi",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/3662109?v=3&s=100",
+      "site": "https:\/\/github.com\/djdefi"
+    },
+    {
+      "name": "foxted",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1385160?v=3&s=100",
+      "site": "https:\/\/github.com\/foxted"
+    },
+    {
+      "name": "vinkla",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/499192?v=3&s=100",
+      "site": "https:\/\/github.com\/vinkla"
+    },
+    {
+      "name": "willdurand",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/217628?v=3&s=100",
+      "site": "https:\/\/github.com\/willdurand"
+    },
+    {
+      "name": "amondnet",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1964421?v=3&s=100",
+      "site": "https:\/\/github.com\/amondnet"
+    },
+    {
+      "name": "wfjsw",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/2220320?v=3&s=100",
+      "site": "https:\/\/github.com\/wfjsw"
+    },
+    {
+      "name": "manuelgu",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/4404335?v=3&s=100",
+      "site": "https:\/\/github.com\/manuelgu"
+    },
+    {
+      "name": "tobru",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1695957?v=3&s=100",
+      "site": "https:\/\/github.com\/tobru"
+    },
+    {
+      "name": "leegeng",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/343270?v=3&s=100",
+      "site": "https:\/\/github.com\/leegeng"
+    },
+    {
+      "name": "clbn",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1071933?v=3&s=100",
+      "site": "https:\/\/github.com\/clbn"
+    },
+    {
+      "name": "andrewgoktepe",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/3442168?v=3&s=100",
+      "site": "https:\/\/github.com\/andrewgoktepe"
+    },
+    {
+      "name": "andygrunwald",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/320064?v=3&s=100",
+      "site": "https:\/\/github.com\/andygrunwald"
+    },
+    {
+      "name": "AntoineAugusti",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/295709?v=3&s=100",
+      "site": "https:\/\/github.com\/AntoineAugusti"
+    },
+    {
+      "name": "Narno",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/80580?v=3&s=100",
+      "site": "https:\/\/github.com\/Narno"
+    },
+    {
+      "name": "BenjaminPaap",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/396685?v=3&s=100",
+      "site": "https:\/\/github.com\/BenjaminPaap"
+    },
+    {
+      "name": "benwa",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1351571?v=3&s=100",
+      "site": "https:\/\/github.com\/benwa"
+    },
+    {
+      "name": "c-rack",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/169184?v=3&s=100",
+      "site": "https:\/\/github.com\/c-rack"
+    },
+    {
+      "name": "driade",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/5692232?v=3&s=100",
+      "site": "https:\/\/github.com\/driade"
+    },
+    {
+      "name": "dosten",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/510842?v=3&s=100",
+      "site": "https:\/\/github.com\/dosten"
+    },
+    {
+      "name": "DivineOmega",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/650645?v=3&s=100",
+      "site": "https:\/\/github.com\/DivineOmega"
+    },
+    {
+      "name": "ManneW",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/659680?v=3&s=100",
+      "site": "https:\/\/github.com\/ManneW"
+    },
+    {
+      "name": "fabianlaule",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/10254363?v=3&s=100",
+      "site": "https:\/\/github.com\/fabianlaule"
+    },
+    {
+      "name": "floler",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1118875?v=3&s=100",
+      "site": "https:\/\/github.com\/floler"
+    },
+    {
+      "name": "Forst",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/369699?v=3&s=100",
+      "site": "https:\/\/github.com\/Forst"
+    },
+    {
+      "name": "Duffleman",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1222340?v=3&s=100",
+      "site": "https:\/\/github.com\/Duffleman"
+    },
+    {
+      "name": "gregkare",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/43297?v=3&s=100",
+      "site": "https:\/\/github.com\/gregkare"
+    },
+    {
+      "name": "HipsterBrown",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/3051193?v=3&s=100",
+      "site": "https:\/\/github.com\/HipsterBrown"
+    },
+    {
+      "name": "jlamim",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1915321?v=3&s=100",
+      "site": "https:\/\/github.com\/jlamim"
+    },
+    {
+      "name": "coreation",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/361244?v=3&s=100",
+      "site": "https:\/\/github.com\/coreation"
+    },
+    {
+      "name": "janyksteenbeek",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/3578636?v=3&s=100",
+      "site": "https:\/\/github.com\/janyksteenbeek"
+    },
+    {
+      "name": "JMousqueton",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/4148567?v=3&s=100",
+      "site": "https:\/\/github.com\/JMousqueton"
+    },
+    {
+      "name": "berlic",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/2950241?v=3&s=100",
+      "site": "https:\/\/github.com\/berlic"
+    },
+    {
+      "name": "adamlc",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/809944?v=3&s=100",
+      "site": "https:\/\/github.com\/adamlc"
+    },
+    {
+      "name": "LeoColomb",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/846943?v=3&s=100",
+      "site": "https:\/\/github.com\/LeoColomb"
+    },
+    {
+      "name": "JayBizzle",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/340752?v=3&s=100",
+      "site": "https:\/\/github.com\/JayBizzle"
+    },
+    {
+      "name": "yuters",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/801718?v=3&s=100",
+      "site": "https:\/\/github.com\/yuters"
+    },
+    {
+      "name": "askmatey",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/812964?v=3&s=100",
+      "site": "https:\/\/github.com\/askmatey"
+    },
+    {
+      "name": "matteosister",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/212723?v=3&s=100",
+      "site": "https:\/\/github.com\/matteosister"
+    },
+    {
+      "name": "MaxGfeller",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/361435?v=3&s=100",
+      "site": "https:\/\/github.com\/MaxGfeller"
+    },
+    {
+      "name": "mbabker",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/368545?v=3&s=100",
+      "site": "https:\/\/github.com\/mbabker"
+    },
+    {
+      "name": "jloh",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/3689532?v=3&s=100",
+      "site": "https:\/\/github.com\/jloh"
+    },
+    {
+      "name": "bashou",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/2558099?v=3&s=100",
+      "site": "https:\/\/github.com\/bashou"
+    },
+    {
+      "name": "Finkregh",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/518090?v=3&s=100",
+      "site": "https:\/\/github.com\/Finkregh"
+    },
+    {
+      "name": "phelipealves",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/2778150?v=3&s=100",
+      "site": "https:\/\/github.com\/phelipealves"
+    },
+    {
+      "name": "Crash--",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1107936?v=3&s=100",
+      "site": "https:\/\/github.com\/Crash--"
+    },
+    {
+      "name": "rkgrep",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/2423048?v=3&s=100",
+      "site": "https:\/\/github.com\/rkgrep"
+    },
+    {
+      "name": "gitter-badger",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/8518239?v=3&s=100",
+      "site": "https:\/\/github.com\/gitter-badger"
+    },
+    {
+      "name": "axilleas",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/340023?v=3&s=100",
+      "site": "https:\/\/github.com\/axilleas"
+    },
+    {
+      "name": "wdalmut",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/551974?v=3&s=100",
+      "site": "https:\/\/github.com\/wdalmut"
+    },
+    {
+      "name": "revi",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/7630875?v=3&s=100",
+      "site": "https:\/\/github.com\/revi"
+    },
+    {
+      "name": "blaskovicz",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/10687433?v=3&s=100",
+      "site": "https:\/\/github.com\/blaskovicz"
+    },
+    {
+      "name": "agilmore",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/2162806?v=3&s=100",
+      "site": "https:\/\/github.com\/agilmore"
+    },
+    {
+      "name": "gellu",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1087156?v=3&s=100",
+      "site": "https:\/\/github.com\/gellu"
+    },
+    {
+      "name": "jcherqui",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/5039608?v=3&s=100",
+      "site": "https:\/\/github.com\/jcherqui"
+    },
+    {
+      "name": "naabster",
+      "avatar": "https:\/\/avatars.githubusercontent.com\/u\/1961461?v=3&s=100",
+      "site": "https:\/\/github.com\/naabster"
+    },
+    {
+      "name": "connorvg",
+      "avatar": "https:\/\/avatars1.githubusercontent.com\/u\/3260091?v=3&s=460?v=3&s=100",
+      "site": "https:\/\/connorvg.tv"
+    }
+  ]
+}
