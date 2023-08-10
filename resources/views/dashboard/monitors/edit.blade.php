@@ -59,8 +59,8 @@
                     <div class="form-group">
                         <label>{{ trans('forms.monitors.monitor_authentication.name') }}</label>
                         <select name="monitor[monitor_authentication]" class="form-control">
-                            <option value="0" {{ $monitor->monitor_authentication === 0 ? "selected" : null }}>{{ trans('forms.monitors.monitor_authentication.no') }}</option>
-                            <option value="1" {{ $monitor->monitor_authentication === 1 ? "selected" : null }}>{{ trans('forms.monitors.monitor_authentication.basic') }}</option>
+                            <option value="0" {{ $monitor->monitor_authentication === 0 ? "selected" : null }}>{{ trans('forms.monitors.monitor_authentication.option.0') }}</option>
+                            <option value="1" {{ $monitor->monitor_authentication === 1 ? "selected" : null }}>{{ trans('forms.monitors.monitor_authentication.option.1') }}</option>
                         </select>
                     </div>
                     <div class="form-group">
